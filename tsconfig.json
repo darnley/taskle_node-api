@@ -5,7 +5,9 @@
     "target": "es6",
     "moduleResolution": "node",
     "sourceMap": false,
-    "outDir": "dist"
+    "outDir": "dist",
+    "removeComments": true,
+    "strict": true
   },
   "lib": [
     "es2018"
