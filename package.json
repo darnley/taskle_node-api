@@ -5,8 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/darnley/taskle_node-api.git",
   "scripts": {
-    "dev": "nodemon src/entry.ts",
-    "dev:debug": "nodemon src/entry.ts"
+    "dev": "nodemon src/entry.ts"
   },
   "devDependencies": {
     "@types/express": "^4.17.2",
