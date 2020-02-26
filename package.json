@@ -1,0 +1,7 @@
+{
+  "name": "taskle_node-api",
+  "version": "1.0.0",
+  "description": "The web based API written in JavaScript/Node.js for Taskle project",
+  "main": "index.js",
+  "repository": "https://github.com/darnley/taskle_node-api.git"
+}
