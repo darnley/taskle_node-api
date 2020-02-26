@@ -6,7 +6,8 @@
   "repository": "https://github.com/darnley/taskle_node-api.git",
   "scripts": {
     "dev": "nodemon src/entry.ts",
-    "build": "rimraf dist && tsc"
+    "build": "rimraf dist && tsc",
+    "start": "rimraf dist && tsc && node dist/entry.js"
   },
   "devDependencies": {
     "@types/cors": "^2.8.6",
