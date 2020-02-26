@@ -11,5 +11,5 @@
         "typescript",
         "typescriptreact"
     ],
-    "eslint.alwaysShowStatus": true,
+    "eslint.alwaysShowStatus": true
 }
