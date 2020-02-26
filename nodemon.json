@@ -1,0 +1,12 @@
+{
+    "watch": [
+        "src"
+    ],
+    "execMap": {
+        "ts": "node --inspect -r sucrase/register src/entry.ts"
+    },
+    "ext": "ts",
+    "env": {
+        "NODE_ENV": "development"
+    }
+}
