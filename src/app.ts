@@ -2,6 +2,7 @@ import express from 'express'
 import morgan from 'morgan'
 import cors from 'cors'
 import helmet from 'helmet'
+import mongoose from 'mongoose'
 
 class App {
   public express: express.Application
@@ -25,7 +26,17 @@ class App {
   }
 
   private database(): void {
-    // mongoose.connect(...)
+    const connectionString: string = String(process.env.MONGODB_CONNECTION_STRING)
+    const databaseName: string = String(process.env.MONGODB_DATABASE_NAME)
+
+    mongoose.connect(connectionString, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      dbName: databaseName
+    }, (err) => {
+      console.error(err)
+      process.exit(1)
+    })
   }
 
   private routes(): void {

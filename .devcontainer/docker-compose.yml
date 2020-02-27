@@ -28,6 +28,9 @@ services:
 
   mongo:
     image: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password123
     restart: unless-stopped
     volumes:
       - /data/db

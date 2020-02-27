@@ -3,7 +3,7 @@
         "src"
     ],
     "execMap": {
-        "ts": "node --inspect -r sucrase/register src/entry.ts"
+        "ts": "node --inspect -r sucrase/register src/server.ts"
     },
     "ext": "ts",
     "env": {
