@@ -11,5 +11,8 @@
         "typescript",
         "typescriptreact"
     ],
-    "eslint.alwaysShowStatus": true
+    "eslint.alwaysShowStatus": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    }
 }
