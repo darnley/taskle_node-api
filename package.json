@@ -2,12 +2,12 @@
   "name": "taskle_node-api",
   "version": "1.0.0",
   "description": "The web based API written in JavaScript/Node.js for Taskle project",
-  "main": "index.js",
+  "main": "./dist/src/server.js",
   "repository": "https://github.com/darnley/taskle_node-api.git",
   "scripts": {
     "dev": "nodemon src/server",
     "build": "rimraf dist && tsc",
-    "start": "rimraf dist && tsc && node dist/server.js"
+    "start": "rimraf dist && tsc && node dist/src/server.js"
   },
   "devDependencies": {
     "@types/cors": "^2.8.6",
