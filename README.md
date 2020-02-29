@@ -26,4 +26,4 @@ Na configuração atual, o [Visual Studio Code](https://code.visualstudio.com), 
 $ yarn dev
 ```
 
-Ao executar este comando, o [Visual Studio Code](https://code.visualstudio.com), tendo os [Dev Containers](https://code.visualstudio.com/docs/remote/containers) deve automaticamente detectar a porta de `debug` e tudo já estará funcionando.
+Ao executar este comando, o [Visual Studio Code](https://code.visualstudio.com) deve automaticamente detectar a porta de `debug` e tudo já estará funcionando.
