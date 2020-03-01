@@ -22,7 +22,8 @@ const getToken = (req: Request, res: Response): void => {
       }
       const jwtSecret: string = process.env.JWT_SECRET || ''
 
-      const token = jwt.sign(payload, jwtSecret, { expiresIn: jwtParams.expiration })
+      const token = jwt.sign(payload, jwtSecret, { expiresIn: `${jwtParams.expiration}h` })
+      const currentTime = moment(new Date())
 
       res.json({
         token: token,
