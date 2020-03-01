@@ -5,7 +5,7 @@ export interface ITeam extends Document {
 }
 
 const TeamSchema: Schema = new Schema({
-  name: { type: String, required: true, maxlength: 20 }
+  name: { type: String, required: true, maxlength: 20, unique: true }
 }, {
   timestamps: true
 })

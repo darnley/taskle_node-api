@@ -64,6 +64,7 @@ class App {
     mongoose.connect(connectionString, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
+      useCreateIndex: true,
       dbName: databaseName
     }, (err) => {
       if (err) {
