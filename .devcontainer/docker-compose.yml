@@ -1,9 +1,13 @@
+---
 #-------------------------------------------------------------------------------------------------------------
 
 #-------------------------------------------------------------------------------------------------------------
 # Copyright (c) Microsoft Corporation. All rights reserved.
 # Licensed under the MIT License. See https://go.microsoft.com/fwlink/?linkid=2090316 for license information.
 version: "3"
+networks:
+  taskle_dev_network:
+    external: false
 services:
   web:
     # Uncomment the next line to use a non-root user for all processes. You can also
@@ -12,25 +16,31 @@ services:
     # you may need to update USER_UID and USER_GID in .devcontainer/Dockerfile to match your
     # user if not 1000. See https://aka.ms/vscode-remote/containers/non-root for details.
     # user: node
-
     build:
       context: .
       dockerfile: Dockerfile
-
+    networks:
+      - taskle_dev_network
     volumes:
       - ..:/workspace:cached
-
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
-
     links:
       - mongo
+    ports:
+      - 4000:3333
 
   mongo:
     image: mongo
+    networks:
+      - taskle_dev_network
     environment:
+      - MONGO_INITDB_DATABASE=taskle_db
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=password123
     restart: unless-stopped
+    command: [--auth]
     volumes:
       - /data/db
+    ports:
+      - 14000:27017

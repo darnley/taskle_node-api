@@ -2,11 +2,12 @@ import express from 'express'
 import morgan from 'morgan'
 import cors from 'cors'
 import helmet from 'helmet'
-// import mongoose from 'mongoose'
+import mongoose from 'mongoose'
 import bodyParser from 'body-parser'
 import authentication from './utils/authentication'
 import routes from './routes'
 import requestIp from 'request-ip'
+import log from './utils/log'
 
 /**
  * The main Application
@@ -57,17 +58,21 @@ class App {
    * @memberof App
    */
   private database (): void {
-    /* const connectionString: string = String(process.env.MONGODB_CONNECTION_STRING)
-    const databaseName: string = String(process.env.MONGODB_DATABASE_NAME)
+    const connectionString = String(process.env.MONGODB_CONNECTION_STRING)
+    const databaseName = String(process.env.MONGODB_DATABASE_NAME)
 
-     mongoose.connect(connectionString, {
+    mongoose.connect(connectionString, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       dbName: databaseName
     }, (err) => {
-      console.error(err)
-      process.exit(1)
-    }) */
+      if (err) {
+        log.error(err)
+        process.exit(1)
+      }
+    }).then(() => {
+      log.info('Connection established to MongoDB')
+    })
   }
 
   /**
