@@ -2,9 +2,18 @@ import { Request, Response } from 'express'
 import team from '../../models/Team'
 
 const getAll = async (req: Request, res: Response): Promise<void> => {
-  const teams = await team.find({})
-
-  res.json(teams)
+  team
+    .find({})
+    .then((teams) => {
+      res.json(teams)
+    })
+    .catch((reason) => {
+      res
+        .status(500)
+        .json({
+          message: reason.message
+        })
+    })
 }
 
 export default getAll
