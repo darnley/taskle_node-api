@@ -7,7 +7,6 @@ const router = Router()
 
 router.get('/', getAll)
 router.post('/', add)
-router.get('/:projectId', get)
-router.get('/:projectId/tasks')
+router.get('/:taskId', get)
 
 export default router
