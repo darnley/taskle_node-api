@@ -1,0 +1,798 @@
+{
+	"info": {
+		"_postman_id": "130d3227-89cf-4220-8fec-30fe093cd865",
+		"name": "Taskle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Get token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "472ecda3-4fd4-46c7-8ab0-7ff419aa84fe",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"darnleycosta@gmail.com\",\n\t\"password\": \"123123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apiUrl}}/auth/token",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"auth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apiUrl}}/auth/verify",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"auth",
+								"verify"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Teams",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/teams",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apiUrl}}/teams",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/teams/:id",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"teams",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "5d9eb2ff-4c98-44b0-ac65-7a67787ea52f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "0efbbcb6-aa52-470e-99ba-7ca8689ac729",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "People",
+			"item": [
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\": \"Robô\",\n\t\"lastName\": \"Ed\",\n\t\"emailAddress\": \"roboed@gmail.com\",\n\t\"password\": \"123\",\n\t\"role\": \"normal\",\n\t\"starRating\": 3.21,\n\t\"team\": \"5e533f38cb2e0b1596f3b321\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apiUrl}}/people",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"people"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/people",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"people"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/people/:id",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"people",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "5e5c254913c1be1921c18219"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "Tasks",
+					"item": [
+						{
+							"name": "Get all tasks in project",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/projects/:projectId/tasks",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"projects",
+										":projectId",
+										"tasks"
+									],
+									"variable": [
+										{
+											"key": "projectId",
+											"value": "5e60aabd73123604447c3812"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"description\": \"Essa é a primeira tarefa.\",\r\n  \"keywords\": [\"react\", \"nodejs\"],\r\n  \"status\": \"not-started\",\r\n  \"responsible\": null,\r\n  \"complexity\": \"low\",\r\n  \"deliveryDate\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiUrl}}/projects/:projectId/tasks",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"projects",
+										":projectId",
+										"tasks"
+									],
+									"variable": [
+										{
+											"key": "projectId",
+											"value": "5e60aabd73123604447c3812"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"description\": \"Essa é a primeira tarefa.\",\r\n  \"keywords\": [\"react\", \"nodejs\"],\r\n  \"status\": \"not-started\",\r\n  \"responsible\": null,\r\n  \"complexity\": \"low\",\r\n  \"deliveryDate\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiUrl}}/projects/:projectId/tasks/:taskId",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"projects",
+										":projectId",
+										"tasks",
+										":taskId"
+									],
+									"variable": [
+										{
+											"key": "projectId",
+											"value": "5e60aabd73123604447c3812"
+										},
+										{
+											"key": "taskId",
+											"value": "5e643be9f427131586f992b9"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remove",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/projects/:projectId/tasks/:taskId",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"projects",
+										":projectId",
+										"tasks",
+										":taskId"
+									],
+									"variable": [
+										{
+											"key": "projectId",
+											"value": "5e60aabd73123604447c3812"
+										},
+										{
+											"key": "taskId",
+											"value": "5e643f3c7110aa1c1277e660"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "People",
+					"item": [
+						{
+							"name": "Get people in project",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{apiUrl}}/projects/:projectId/people",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"projects",
+										":projectId",
+										"people"
+									],
+									"variable": [
+										{
+											"key": "projectId",
+											"value": "5e60aabd73123604447c3812"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/projects",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Projeto B\",\n    \"description\": \"Primeiro projeto do sistema\",\n    \"keywords\": [\n        \"nodejs\",\n        \"ecommerce\"\n    ],\n    \"manager\": \"5e5c2c32e6ca6324794a0470\",\n    \"visibility\": {\n        \"users\": [],\n        \"teams\": []\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apiUrl}}/projects",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Projeto A\",\n    \"description\": \"Primeiro projeto do sistema\",\n    \"keywords\": [\n        \"nodejs\",\n        \"ecommerce\"\n    ],\n    \"manager\": \"5e5c2c32e6ca6324794a0470\",\n    \"visibility\": {\n        \"users\": [],\n        \"teams\": []\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apiUrl}}/projects",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"projects"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "291"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"123-xe2Fl+h7zKalBxdsaQfU6LXpJsY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Mar 2020 07:31:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"visibility\": {\n        \"users\": [],\n        \"teams\": []\n    },\n    \"keywords\": [\n        \"nodejs\",\n        \"ecommerce\"\n    ],\n    \"_id\": \"5e60aabd73123604447c3812\",\n    \"name\": \"Projeto A\",\n    \"description\": \"Primeiro projeto do sistema\",\n    \"manager\": \"5e5c2c32e6ca6324794a0470\",\n    \"createdAt\": \"2020-03-05T07:31:09.850Z\",\n    \"updatedAt\": \"2020-03-05T07:31:09.850Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/projects/:projectId",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"projects",
+								":projectId"
+							],
+							"variable": [
+								{
+									"key": "projectId",
+									"value": "5e60aabd73123604447c3816"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"visibility\": {\r\n        \"users\": [],\r\n        \"teams\": []\r\n    },\r\n    \"status\": \"ended\",\r\n    \"keywords\": [\r\n        \"nodejs\",\r\n        \"ecommerce\"\r\n    ],\r\n    \"_id\": \"5e64449b50edac26502562ea\",\r\n    \"name\": \"Projeto B\",\r\n    \"description\": \"Primeiro projeto do sistema\",\r\n    \"manager\": \"5e5c2c32e6ca6324794a0470\",\r\n    \"createdAt\": \"2020-03-08T01:04:27.018Z\",\r\n    \"updatedAt\": \"2020-03-08T01:04:27.018Z\",\r\n    \"__v\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apiUrl}}/projects/:projectId",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"projects",
+								":projectId"
+							],
+							"variable": [
+								{
+									"key": "projectId",
+									"value": "5e64449b50edac26502562ea"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "End project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n    \t\"user\": \"5e5c2c32e6ca6324794a0470\",\n    \t\"starRating\": 4\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apiUrl}}/projects/:projectId/end",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"projects",
+								":projectId",
+								"end"
+							],
+							"variable": [
+								{
+									"key": "projectId",
+									"value": "5e60aabd73123604447c3812"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Keywords",
+			"item": [
+				{
+					"name": "Suggest keyword",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/keywords/:word",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"keywords",
+								":word"
+							],
+							"variable": [
+								{
+									"key": "word",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/keywords",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"keywords"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyIkX18iOnsic3RyaWN0TW9kZSI6dHJ1ZSwic2VsZWN0ZWQiOnsiZW1haWxBZGRyZXNzIjoxLCJwYXNzd29yZCI6MSwic2FsdCI6MSwicm9sZSI6MX0sImdldHRlcnMiOnt9LCJfaWQiOiI1ZTVjMmMzMmU2Y2E2MzI0Nzk0YTA0NzAiLCJ3YXNQb3B1bGF0ZWQiOmZhbHNlLCJhY3RpdmVQYXRocyI6eyJwYXRocyI6eyJzdGFyUmF0aW5nQ291bnQiOiJyZXF1aXJlIiwic3RhclJhdGluZyI6InJlcXVpcmUiLCJyb2xlIjoiaW5pdCIsImVtYWlsQWRkcmVzcyI6ImluaXQiLCJ0ZWFtIjoicmVxdWlyZSIsImlzQWN0aXZlIjoicmVxdWlyZSIsImxhc3ROYW1lIjoicmVxdWlyZSIsImZpcnN0TmFtZSI6InJlcXVpcmUiLCJfaWQiOiJpbml0IiwicGFzc3dvcmQiOiJpbml0Iiwic2FsdCI6ImluaXQifSwic3RhdGVzIjp7Imlnbm9yZSI6e30sImRlZmF1bHQiOnt9LCJpbml0Ijp7Il9pZCI6dHJ1ZSwicm9sZSI6dHJ1ZSwiZW1haWxBZGRyZXNzIjp0cnVlLCJwYXNzd29yZCI6dHJ1ZSwic2FsdCI6dHJ1ZX0sIm1vZGlmeSI6e30sInJlcXVpcmUiOnsic3RhclJhdGluZ0NvdW50Ijp0cnVlLCJzdGFyUmF0aW5nIjp0cnVlLCJ0ZWFtIjp0cnVlLCJpc0FjdGl2ZSI6dHJ1ZSwibGFzdE5hbWUiOnRydWUsImZpcnN0TmFtZSI6dHJ1ZX19LCJzdGF0ZU5hbWVzIjpbInJlcXVpcmUiLCJtb2RpZnkiLCJpbml0IiwiZGVmYXVsdCIsImlnbm9yZSJdfSwicGF0aHNUb1Njb3BlcyI6e30sImNhY2hlZFJlcXVpcmVkIjp7fSwiJHNldENhbGxlZCI6e30sImVtaXR0ZXIiOnsiX2V2ZW50cyI6e30sIl9ldmVudHNDb3VudCI6MCwiX21heExpc3RlbmVycyI6MH0sIiRvcHRpb25zIjp7InNraXBJZCI6dHJ1ZSwiaXNOZXciOmZhbHNlLCJ3aWxsSW5pdCI6dHJ1ZX19LCJpc05ldyI6ZmFsc2UsIl9kb2MiOnsicm9sZSI6InN1cGVyIiwiX2lkIjoiNWU1YzJjMzJlNmNhNjMyNDc5NGEwNDcwIiwiZW1haWxBZGRyZXNzIjoiZGFybmxleWNvc3RhQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJGFyZ29uMmkkdj0xOSRtPTEwMjQsdD0xLHA9MSRNMlZpWlRJMFlXUXRObUZsWWkwME5tUXhMVGhtWkRndE9UZGtPVFF5Tmpoak1qQTAkZ2xLdlRpWm9xaEE4bEVWb3pBdjVsNzUvQkhaUHAvNm5obHc0NnFCNERScyIsInNhbHQiOiIzZWJlMjRhZC02YWViLTQ2ZDEtOGZkOC05N2Q5NDI2OGMyMDQifSwiJGxvY2FscyI6e30sIiRvcCI6bnVsbCwiJGluaXQiOnRydWUsImlwQWRkcmVzcyI6Ijo6ZmZmZjoxNzIuMjEuMC4xIiwiaWF0IjoxNTgzNjc5ODM5LCJleHAiOjE1ODM3MDE0Mzl9.vcjhRIeIhzR0uu57LZG0ImrbhBW6LAw8I8inJt_zdhs",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "287148d8-6713-42cd-9ba4-8b347f78e58c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "3985654b-a2eb-497f-9162-ebb5865b919f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "1a21ef6d-af6e-4994-84d0-2efcf79220bd",
+			"key": "apiUrl",
+			"value": "http://localhost:4000",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
