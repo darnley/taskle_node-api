@@ -3,7 +3,7 @@ import passport from 'passport'
 import { Strategy, ExtractJwt, StrategyOptions } from 'passport-jwt'
 import { Handler } from 'express'
 import User from '../models/User'
-import log from './log'
+import log from '../utils/log'
 
 /**
  * The JWT configuration

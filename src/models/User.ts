@@ -1,4 +1,4 @@
-import mongoose, { Schema, Document } from 'mongoose'
+import mongoose, { Schema, Document, mongo } from 'mongoose'
 import emailAddressValidator from '../utils/validators/emailAddressValidator'
 import Role from '../enums/roles'
 import log from '../utils/log'
@@ -57,6 +57,10 @@ export interface IUser extends Document {
    * @type {Role}
    */
   role: Role;
+
+  starRating: number;
+
+  starRatingCount: number;
 }
 
 /**
@@ -106,9 +110,22 @@ const UserSchema = new Schema<IUser>({
   },
   role: {
     type: String,
-    enum: ['normal', 'super'],
+    enum: Object.values(Role),
     default: Role.Normal,
     required: [true, 'O nível de permissão do usuário (role) é obrigatório.']
+  },
+  starRating: {
+    type: Number,
+    required: true,
+    default: 0.0,
+    min: 0,
+    max: 4
+  },
+  starRatingCount: {
+    type: Number,
+    required: true,
+    default: 0.0,
+    min: 0
   }
 }, {
   timestamps: true

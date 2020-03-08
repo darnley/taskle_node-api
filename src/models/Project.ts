@@ -1,14 +1,33 @@
 import mongoose, { Schema, Document } from 'mongoose'
 import log from '../utils/log'
+import ProjectStatus from '../enums/projectStatus'
+import { IUser } from './User'
+import { ITeam } from './Team'
+
+export interface IProjectVisibility {
+  users?: IUser[] | string[];
+  teams?: ITeam[] | string[];
+}
 
 export interface IProject extends Document {
   name: string;
+  status: ProjectStatus | string;
+  description?: string;
+  keywords?: string[];
+  manager: IUser | string;
+  visibility: IProjectVisibility;
 }
 
 const ProjectSchema: Schema = new Schema({
   name: {
     type: String,
     required: [true, 'O nome do projeto é obrigatório.']
+  },
+  status: {
+    type: String,
+    required: true,
+    default: ProjectStatus.OnGoing,
+    enum: Object.values(ProjectStatus)
   },
   description: {
     type: String

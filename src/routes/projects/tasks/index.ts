@@ -3,7 +3,7 @@ import getAll from './getAll'
 import add from './add'
 import get from './get'
 import update from './update'
-import verifyIfEntityExistsById from '../../../utils/verifyIfEntityExistsById'
+import verifyIfEntityExistsById from '../../../middlewares/verifyIfEntityExistsById'
 import remove from './remove'
 
 const router = Router({ mergeParams: true })

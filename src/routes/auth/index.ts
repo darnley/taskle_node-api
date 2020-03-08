@@ -1,6 +1,6 @@
 import { Router } from 'express'
 import getToken from './getToken'
-import authentication from '../../utils/authentication'
+import authentication from '../../middlewares/authentication'
 import verifyToken from './verifyToken'
 
 const router = Router()

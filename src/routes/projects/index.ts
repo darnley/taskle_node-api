@@ -5,7 +5,8 @@ import get from './get'
 import tasks from './tasks'
 import people from './people'
 import update from './update'
-import verifyIfEntityExistsById from '../../utils/verifyIfEntityExistsById'
+import verifyIfEntityExistsById from '../../middlewares/verifyIfEntityExistsById'
+import endProject from './end'
 
 const router = Router()
 
@@ -15,6 +16,7 @@ router.post('/', add)
 router.use(['/:projectId', '/:projectId/*'], verifyIfEntityExistsById([{ entity: 'Project' }]))
 router.get('/:projectId', get)
 router.put('/:projectId', update)
+router.post('/:projectId/end', endProject)
 
 // Project/Task
 router.use('/:projectId/tasks', tasks)

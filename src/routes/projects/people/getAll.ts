@@ -6,10 +6,11 @@ const getAll = (req: Request, res: Response) => {
 
   Task
     .find({ project: projectId })
-    .populate('responsible', 'name')
+    .populate('responsible', 'firstName lastName emailAddress')
     .select('responsible')
-    .then((t) => {
-      console.log(t)
+    .then((tasks) => {
+      const people = Array.from(new Set(tasks.map(inner => inner.responsible)))
+      res.json(people)
     })
     .catch((reason) => {
       res

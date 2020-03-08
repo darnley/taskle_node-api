@@ -3,7 +3,7 @@ import tasks from './tasks'
 import people from './people'
 import projects from './projects'
 import auth from './auth'
-import authentication from '../utils/authentication'
+import authentication from '../middlewares/authentication'
 import teams from './teams'
 
 const router = Router()

@@ -1,9 +1,18 @@
 import { Request, Response } from 'express'
 import Project from '../../models/Project'
+import ProjectStatus from '../../enums/projectStatus'
 
-const add = async (req: Request, res: Response): Promise<void> => {
+const add = async (req: Request, res: Response) => {
   const projectId = req.params.projectId
   const newDataProject = new Project(req.body)
+
+  if (newDataProject.status === ProjectStatus.Ended) {
+    return res
+      .status(400)
+      .json({
+        message: 'Não é permitido alterar o estado do projeto para encerrado ou alterar um projeto encerrado. Para encerrar um projeto, utilize a API \'/projects/:projectId/end\'.'
+      })
+  }
 
   newDataProject.validate((err) => {
     if (err) {

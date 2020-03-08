@@ -29,7 +29,7 @@ const TaskSchema: Schema = new Schema({
   status: {
     type: String,
     required: true,
-    enum: ['not-started', 'started', 'finished'],
+    enum: Object.values(TaskStatus),
     default: TaskStatus.NotStarted
   },
   project: {
@@ -44,8 +44,9 @@ const TaskSchema: Schema = new Schema({
   },
   complexity: {
     type: String,
-    enum: ['low', 'medium', 'high'],
-    required: true
+    enum: Object.values(TaskComplexity),
+    required: true,
+    default: TaskComplexity.Low
   },
   deliveryDate: {
     type: mongoose.SchemaTypes.Date,
