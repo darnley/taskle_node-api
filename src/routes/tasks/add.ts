@@ -1,10 +1,8 @@
 import { Request, Response } from 'express'
-import Project from '../../../models/Project'
-import Task from '../../../models/Task'
+import Task from '../../models/Task'
 
-const add = async (req: Request, res: Response): Promise<void> => {
+const add = (req: Request, res: Response) => {
   const projectId: string = req.params.projectId
-
   const newTask = new Task(req.body)
 
   newTask.project = projectId

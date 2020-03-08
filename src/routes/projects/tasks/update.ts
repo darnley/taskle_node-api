@@ -1,11 +1,13 @@
 import { Request, Response } from 'express'
-import Project from '../../../models/Project'
 import Task from '../../../models/Task'
 
 const update = async (req: Request, res: Response): Promise<void> => {
   const projectId = req.params.projectId
   const taskId = req.params.taskId
   const newDataTask = new Task(req.body)
+
+  newDataTask.project = projectId
+  newDataTask._id = taskId
 
   newDataTask.validate((err) => {
     if (err) {
@@ -14,7 +16,7 @@ const update = async (req: Request, res: Response): Promise<void> => {
         .json(err)
     } else {
       Task
-        .findByIdAndUpdate(taskId, newDataTask, (err, updatedTask) => {
+        .findOneAndUpdate({ _id: taskId, project: projectId }, newDataTask, (err, updatedTask) => {
           if (err || !updatedTask) {
             res
               .status(400)
@@ -29,4 +31,4 @@ const update = async (req: Request, res: Response): Promise<void> => {
   })
 }
 
-export default add
+export default update

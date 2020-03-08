@@ -2,7 +2,7 @@ import { Request, Response } from 'express'
 import Project from '../../models/Project'
 
 const add = async (req: Request, res: Response): Promise<void> => {
-  const projectId = req.params.id
+  const projectId = req.params.projectId
   const newDataProject = new Project(req.body)
 
   newDataProject.validate((err) => {

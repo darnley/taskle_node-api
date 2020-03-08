@@ -27,8 +27,9 @@ const TaskSchema: Schema = new Schema({
     }
   ],
   status: {
-    type: TaskStatus,
+    type: String,
     required: true,
+    enum: ['not-started', 'started', 'finished'],
     default: TaskStatus.NotStarted
   },
   project: {
@@ -42,7 +43,7 @@ const TaskSchema: Schema = new Schema({
     required: false
   },
   complexity: {
-    type: TaskComplexity,
+    type: String,
     enum: ['low', 'medium', 'high'],
     required: true
   },
