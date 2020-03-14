@@ -1,7 +1,7 @@
 import mongoose, { Schema, Document } from 'mongoose'
 import log from '../utils/log'
 import { IUser } from './User'
-import Project, { IProject } from './Project'
+import { IProject } from './Project'
 
 export interface IProjectEndRating extends Document {
   user: IUser | string;

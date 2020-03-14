@@ -5,10 +5,6 @@ import TaskComplexity from '../enums/taskComplexity'
 
 const getProjectStatistics = async (projectId: string): Promise<IProjectStatistics> => {
   async function getPerTaskStatus (): Promise<IProjectStatisticsTaskStatus[]> {
-    const notStarted = await Task.countDocuments({ project: projectId, status: TaskStatus.NotStarted })
-    const started = await Task.countDocuments({ project: projectId, status: TaskStatus.Started })
-    const finished = await Task.countDocuments({ project: projectId, status: TaskStatus.Finished })
-
     const statistics: IProjectStatisticsTaskStatus[] = []
 
     for (const status of Object.values(TaskStatus)) {

@@ -1,8 +1,7 @@
-import mongoose, { Schema, Document, mongo } from 'mongoose'
+import mongoose, { Schema, Document } from 'mongoose'
 import emailAddressValidator from '../utils/validators/emailAddressValidator'
 import Role from '../enums/roles'
 import log from '../utils/log'
-import argon2 from 'argon2'
 
 /**
  * The system's user.
