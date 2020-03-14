@@ -8,6 +8,7 @@ import TaskStatus from '../enums/taskStatus'
 export interface ITask extends Document {
   description: string;
   keywords: string[];
+  milestone: string;
   status: TaskStatus;
   project: IProject | string;
   responsible?: IUser | string;
@@ -26,6 +27,10 @@ const TaskSchema: Schema = new Schema({
       type: String
     }
   ],
+  milestone: {
+    type: String,
+    required: false
+  },
   status: {
     type: String,
     required: true,
