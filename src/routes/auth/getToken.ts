@@ -1,7 +1,6 @@
 import { Request, Response } from 'express'
 import jwt from 'jsonwebtoken'
 import moment from 'moment'
-import requestIp from 'request-ip'
 import User from '../../models/User'
 import argon2 from 'argon2'
 import log from '../../utils/log'

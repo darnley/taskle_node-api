@@ -1,6 +1,7 @@
 import { Request, Response } from 'express'
 import Task from '../../../models/Task'
 import log from '../../../utils/log'
+import { IUser } from '../../../models/User'
 
 const remove = (req: Request, res: Response) => {
   const projectId: string = req.params.projectId
@@ -18,7 +19,7 @@ const remove = (req: Request, res: Response) => {
       Task
         .findByIdAndDelete(taskId)
         .then(() => {
-          log.info(`The task '${taskId}' in project '${projectId}' has been deleted by '${req.user._id}'`)
+          log.info(`The task '${taskId}' in project '${projectId}' has been deleted by '${(req.user as IUser)._id}'`)
           res.send()
         })
     })
