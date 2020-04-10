@@ -7,7 +7,7 @@ const getProjects = (req: Request, res: Response) => {
 
   Task
     .find({ responsible: userId })
-    .populate('project', 'name description keywords')
+    .populate('project', 'name description keywords createdAt')
     .select('project')
     .then((tasks) => {
       res
