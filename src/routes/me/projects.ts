@@ -11,7 +11,7 @@ const getProjects = (req: Request, res: Response) => {
     .select('project')
     .then((tasks) => {
       res
-        .json(tasks.map(k => k.project))
+        .json([...new Set(tasks.map(k => k.project))])
     })
     .catch((reason) => {
       res
