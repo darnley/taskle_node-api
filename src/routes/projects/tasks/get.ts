@@ -6,7 +6,10 @@ const getAll = async (req: Request, res: Response): Promise<void> => {
   const taskId = req.params.taskId
 
   Task
-    .findOne({ projectId, taskId })
+    .findOne({
+      project: projectId,
+      _id: taskId
+    })
     .populate('project', 'name')
     .populate('responsible', 'firstName lastName')
     .then((task) => {
