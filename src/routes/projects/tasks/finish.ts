@@ -7,6 +7,8 @@ const finishTask = (req: Request, res: Response) => {
 
   Task
     .findByIdAndUpdate(taskId, { status: TaskStatus.Finished })
+    .populate('project', 'name')
+    .populate('responsible', 'firstName lastName')
     .then((t) => {
       res
         .json(t)
