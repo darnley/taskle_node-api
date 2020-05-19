@@ -27,6 +27,11 @@ const TaskSchema: Schema = new Schema({
       type: String
     }
   ],
+  isFlagged: {
+    type: Boolean,
+    required: true,
+    default: false
+  },
   milestone: {
     type: String,
     required: false
