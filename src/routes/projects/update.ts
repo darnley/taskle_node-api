@@ -6,6 +6,8 @@ const add = async (req: Request, res: Response) => {
   const projectId = req.params.projectId
   const newDataProject = new Project(req.body)
 
+  newDataProject._id = projectId
+
   if (newDataProject.status === ProjectStatus.Ended) {
     return res
       .status(400)
