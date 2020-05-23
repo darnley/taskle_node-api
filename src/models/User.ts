@@ -2,6 +2,7 @@ import mongoose, { Schema, Document } from 'mongoose'
 import emailAddressValidator from '../utils/validators/emailAddressValidator'
 import Role from '../enums/roles'
 import log from '../utils/log'
+import { ITeam } from './Team'
 
 /**
  * The system's user.
@@ -25,6 +26,12 @@ export interface IUser extends Document {
    * @type {boolean}
    */
   isActive: boolean;
+
+  /**
+   * The user's team
+   * @type {ITeam | string}
+   */
+  team: ITeam | string;
 
   /**
    * The user's mail address
