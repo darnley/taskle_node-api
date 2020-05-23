@@ -1,5 +1,9 @@
 import { MailDataRequired } from '@sendgrid/mail'
 
-type IMailServiceSendMessage = MailDataRequired
+type IMailServiceSendMessage = {
+  to: string;
+  subject: string;
+  html: string;
+}
 
 export default IMailServiceSendMessage
