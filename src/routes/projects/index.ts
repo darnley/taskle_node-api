@@ -8,6 +8,7 @@ import update from './update'
 import verifyIfEntityExistsById from '../../middlewares/verifyIfEntityExistsById'
 import endProject from './end'
 import stats from './stats'
+import getAllMilestones from './getAllMilestones'
 
 const router = Router()
 
@@ -19,6 +20,7 @@ router.get('/:projectId', get)
 router.put('/:projectId', update)
 router.post('/:projectId/end', endProject)
 router.get('/:projectId/stats', stats)
+router.get('/:projectId/milestones', getAllMilestones)
 
 // Project/Task
 router.use('/:projectId/tasks', tasks)
