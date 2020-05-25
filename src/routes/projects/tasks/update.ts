@@ -22,9 +22,26 @@ const update = async (req: Request, res: Response): Promise<void> => {
               .status(400)
               .json(err)
           } else {
-            res
-              .status(200)
-              .json(updatedTask)
+            if (!newDataTask.milestone) {
+              // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+              updatedTask.milestone = undefined!
+
+              updatedTask
+                .save()
+                .then(t => {
+                  res
+                    .status(200)
+                    .json(t)
+                }).catch(err => {
+                  res
+                    .status(400)
+                    .json(err)
+                })
+            } else {
+              res
+                .status(200)
+                .json(updatedTask)
+            }
           }
         })
     }
