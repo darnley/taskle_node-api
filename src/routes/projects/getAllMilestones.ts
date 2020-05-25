@@ -19,7 +19,13 @@ const getAllMilestones = async (req: Request, res: Response): Promise<void> => {
     })
     .select('milestone')
     .distinct('milestone')
-    .then(milestones => res.json(milestones))
+    .then(milestones => {
+      res.json(milestones.map(m => {
+        return {
+          name: m
+        }
+      }))
+    })
     .catch(reason => {
       res
         .status(500)
