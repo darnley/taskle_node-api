@@ -29,11 +29,19 @@ const getProjects = async (req: Request, res: Response) => {
       .map(t => t.project)
 
     const teamProjects = (await Project.find({
-      $or: [
-        { manager: userId },
-        { 'visibility.users': userId },
-        { 'visibility.teams': (user?.team as ITeam).id }
-      ]
+      $and: [{
+        $or: [
+          { manager: userId },
+          { 'visibility.users': userId },
+          { 'visibility.teams': (user?.team as ITeam).id }
+        ]
+      },
+      {
+        _id: {
+          $nin: (taskProjects as IProject[]).map(t => t._id)
+        }
+      }]
+
     })
       // .populate('name description keywords createdAt')
       .populate('manager', 'firstName lastName emailAddress'))
