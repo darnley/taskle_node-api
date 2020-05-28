@@ -14,7 +14,7 @@ const getAll = async (req: Request, res: Response) => {
     const peopleInTasks: IUser[] = (
       await Task
         .find({ project: projectId })
-        .populate('responsible', 'firstName lastName emailAddress')
+        .populate('responsible', 'firstName lastName emailAddress starRating starRatingCount')
         .select('responsible')
     ).map(t => t.responsible as IUser)
 
@@ -22,7 +22,7 @@ const getAll = async (req: Request, res: Response) => {
     const peopleInProject: IUser[] = (
       await Project
         .find({ _id: projectId })
-        .populate('visibility.users', 'firstName lastName emailAddress')
+        .populate('visibility.users', 'firstName lastName emailAddress starRating starRatingCount')
         .select('visibility.users')
     ).map(p => p.visibility.users)[0] as IUser[]
 
@@ -37,7 +37,7 @@ const getAll = async (req: Request, res: Response) => {
     // Get people in teams
     const peopleInTeams: IUser[] = (await User
       .find({ team: { $in: projectTeams } })
-      .select('firstName lastName emailAddress')
+      .select('firstName lastName emailAddress starRating starRatingCount')
     )
 
     const joinedArray: IUser[] = [...peopleInTasks, ...peopleInProject, ...peopleInTeams]
