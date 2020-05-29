@@ -5,6 +5,7 @@ import Project from '../../../models/Project'
 import log from '../../../utils/log'
 import { ITeam } from '../../../models/Team'
 import { distinctArrayOfObjects } from '../../../utils/distinct'
+import addMostUserKeywords from '../../../services/addMostUserKeywords'
 
 const getAll = async (req: Request, res: Response) => {
   const projectId = req.params.projectId
@@ -42,9 +43,11 @@ const getAll = async (req: Request, res: Response) => {
 
     const joinedArray: IUser[] = [...peopleInTasks, ...peopleInProject, ...peopleInTeams]
 
+    const usersKey = await addMostUserKeywords(distinctArrayOfObjects(joinedArray, '_id'))
+
     res
       .status(200)
-      .json(distinctArrayOfObjects(joinedArray, '_id'))
+      .json(usersKey)
 
     log.debug('got it')
   } catch (err) {

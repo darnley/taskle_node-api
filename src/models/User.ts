@@ -67,6 +67,15 @@ export interface IUser extends Document {
   starRating: number;
 
   starRatingCount: number;
+
+  /**
+   * The user's most used keywords.
+   * IT IS ONLY VISIBLE IN APPLICATION. IT IS NOT PERSISTED IN DATABASE.
+   */
+  keywords: {
+    name: string;
+    count: number;
+  }[];
 }
 
 /**
