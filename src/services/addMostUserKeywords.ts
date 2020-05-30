@@ -1,5 +1,4 @@
 import { IUser } from '../models/User'
-import IUserMostKeywords from '../interfaces/UserMostKeywords'
 import Task from '../models/Task'
 
 export default function addMostUserKeywords (users: IUser[]): Promise<IUser[]> {
