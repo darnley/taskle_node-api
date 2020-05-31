@@ -5,17 +5,18 @@ import Project from '../../../models/Project'
 import log from '../../../utils/log'
 import { ITeam } from '../../../models/Team'
 import { distinctArrayOfObjects } from '../../../utils/distinct'
-import addMostUserKeywords from '../../../services/addMostUserKeywords'
+import addMostUserKeywords from '../../../services/userKeywords'
 
 const getAll = async (req: Request, res: Response) => {
   const projectId = req.params.projectId
+  const userPopulateFields = 'firstName lastName emailAddress starRating starRatingCount keywords'
 
   try {
     // Get people that are responsible for tasks
     const peopleInTasks: IUser[] = (
       await Task
         .find({ project: projectId })
-        .populate('responsible', 'firstName lastName emailAddress starRating starRatingCount')
+        .populate('responsible', userPopulateFields)
         .select('responsible')
     ).map(t => t.responsible as IUser)
 
@@ -23,7 +24,7 @@ const getAll = async (req: Request, res: Response) => {
     const peopleInProject: IUser[] = (
       await Project
         .find({ _id: projectId })
-        .populate('visibility.users', 'firstName lastName emailAddress starRating starRatingCount')
+        .populate('visibility.users', userPopulateFields)
         .select('visibility.users')
     ).map(p => p.visibility.users)[0] as IUser[]
 
@@ -38,18 +39,14 @@ const getAll = async (req: Request, res: Response) => {
     // Get people in teams
     const peopleInTeams: IUser[] = (await User
       .find({ team: { $in: projectTeams } })
-      .select('firstName lastName emailAddress starRating starRatingCount')
+      .select(userPopulateFields)
     )
 
     const joinedArray: IUser[] = [...peopleInTasks, ...peopleInProject, ...peopleInTeams]
 
-    const usersKey = await addMostUserKeywords(distinctArrayOfObjects(joinedArray, '_id'))
-
     res
       .status(200)
-      .json(usersKey)
-
-    log.debug('got it')
+      .json(distinctArrayOfObjects(joinedArray, '_id'))
   } catch (err) {
     res
       .status(400)
