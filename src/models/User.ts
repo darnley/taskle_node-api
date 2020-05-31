@@ -3,6 +3,7 @@ import emailAddressValidator from '../utils/validators/emailAddressValidator'
 import Role from '../enums/roles'
 import log from '../utils/log'
 import { ITeam } from './Team'
+import IUserKeyword from '../interfaces/UserKeyword'
 
 /**
  * The system's user.
@@ -72,10 +73,7 @@ export interface IUser extends Document {
    * The user's most used keywords.
    * IT IS ONLY VISIBLE IN APPLICATION. IT IS NOT PERSISTED IN DATABASE.
    */
-  keywords: {
-    name: string;
-    count: number;
-  }[];
+  keywords: IUserKeyword[];
 }
 
 /**
@@ -141,7 +139,12 @@ const UserSchema = new Schema<IUser>({
     required: true,
     default: 0.0,
     min: 0
-  }
+  },
+  keywords: [
+    {
+      type: Object
+    }
+  ]
 }, {
   timestamps: true
 })

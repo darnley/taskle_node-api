@@ -4,6 +4,7 @@ import TaskComplexity from '../enums/taskComplexity'
 import { IProject } from './Project'
 import { IUser } from './User'
 import TaskStatus from '../enums/taskStatus'
+import { updateUserKeywords } from '../services/userKeywords'
 
 export interface ITask extends Document {
   description: string;
@@ -68,6 +69,16 @@ const TaskSchema: Schema = new Schema({
 
 TaskSchema.post<ITask>('save', (doc) => {
   log.debug(`Task has been saved (${doc._id})`)
+
+  // Call update services
+  if (doc.responsible) updateUserKeywords(doc.responsible as string)
+})
+
+TaskSchema.post<ITask>('remove', (doc) => {
+  log.debug(`Task has been removed (${doc._id})`)
+
+  // Call update services
+  if (doc.responsible) updateUserKeywords(doc.responsible as string)
 })
 
 export default mongoose.model<ITask>('Task', TaskSchema)
