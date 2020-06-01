@@ -45,6 +45,7 @@ const update = async (req: Request, res: Response): Promise<void> => {
             }
 
             if (updatedTask.responsible) updateUserKeywords(updatedTask.responsible as string)
+            if (newDataTask.responsible && newDataTask.responsible !== updatedTask.responsible) updateUserKeywords(newDataTask.responsible as string)
           }
         })
     }
