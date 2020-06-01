@@ -6,7 +6,7 @@ const getAll = async (req: Request, res: Response): Promise<void> => {
 
   Task
     .find({ project: projectId })
-    .populate('project', 'name')
+    .populate('project', 'name status')
     .populate('responsible', 'firstName lastName')
     .then((task) => {
       res

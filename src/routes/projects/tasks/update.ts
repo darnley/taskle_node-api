@@ -1,5 +1,6 @@
 import { Request, Response } from 'express'
 import Task from '../../../models/Task'
+import { updateUserKeywords } from '../../../services/userKeywords'
 
 const update = async (req: Request, res: Response): Promise<void> => {
   const projectId = req.params.projectId
@@ -42,6 +43,9 @@ const update = async (req: Request, res: Response): Promise<void> => {
                 .status(200)
                 .json(updatedTask)
             }
+
+            if (updatedTask.responsible) updateUserKeywords(updatedTask.responsible as string)
+            if (newDataTask.responsible && newDataTask.responsible !== updatedTask.responsible) updateUserKeywords(newDataTask.responsible as string)
           }
         })
     }

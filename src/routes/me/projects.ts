@@ -19,7 +19,7 @@ const getProjects = async (req: Request, res: Response) => {
       .find({ responsible: userId })
       .populate({
         path: 'project',
-        select: 'name description keywords createdAt',
+        select: 'name description keywords createdAt status',
         populate: {
           path: 'manager',
           select: 'firstName lastName emailAddress'

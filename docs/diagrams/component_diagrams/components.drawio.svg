@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="821px" height="411px" viewBox="-0.5 -0.5 821 411" content="&lt;mxfile host=&quot;&quot; modified=&quot;2020-05-31T18:06:03.776Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.45.1 Chrome/78.0.3904.130 Electron/7.2.4 Safari/537.36&quot; etag=&quot;zcjaHgNc0X8lGVGbPqYv&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Diagrama de componentes&quot;&gt;5VnLcuMoFP0aLZMSQi8vYzudXsRTqXaqZmaJJSzTJQsNQo49Xz8ggd6x3W3F3RlvbHEECM65F46QAWfb/RND6WZBQxwblhnuDTg3LMudeOJXAocScHwFRIyEJQRqYEn+xQo0FZqTEGetipzSmJO0DQY0SXDAWxhijL61q61p3H5qiiLcA5YBivvonyTkmxL1La/Gv2ISbfSTgTsp72yRrqxmkm1QSN8aEHw04IxRysur7X6GY8md5qVs9+Wdu9XAGE74OQ2sssEOxbmam2G5sWg61f8h3pEAi1KkUP1vWFDoAacLYwaNB/BPThIkNaWS+JiIAWA1R37QxO0w40Tw+BCTKBEQp6noAalSjNey7yxFAUmiV3lv7tfAc3F7btXIN8UxKLANSuVjgnyFZbGMmmKIIWEiDAiVD8loLjWYrmnCl2pkdjGjLnOKTDlmvG9AisknTLeYs4Ooou5qUVVUA+iU5bc6RsBE1dk048NXIFJxGVVd19KJC6XesJLwpJIrGfiYHZHyD7TDkQhIdmPC2R3h/AHh7CHhrBGEs3vCfcNILFpdCTRNWxrmEnuHfU222agRyGRkAhiWcQQGnTaDlj3AoDnAoDMCge7la9gSsx25vbiHZkc2s6ea5Q6oZoMRZPNOyoaTHWE02coJHlm0hLu4/57dmnR63VDS+QPSmW5fOghHkA5MBrTr0I9DYZlUkTK+oRFNUPxYo1NG8yTEskvJW13nmRZqAAF+x5wflP9DOadFUIjB/qUaFYW/m4W55Md1qqKkR+6vqvyCGRHTlYth0eZdJYR0LFBT8UuIIxZhXUutb3KWR+ViOEac7NrG8RLuq1A5stwx8cBj+/yCJhGdT6VbU1UHxHtGK+Haz9hEtiQMS0GxSAS0KjqRj0kpSXgxVWdqOPNhunUodSO/cu+qQ6NpkIcywrwX5spqb+Rl6WwNVN8vctx1x8BtdXqnM0/3QNfrDPOehtUIz5O1bwOullI/mwR6iOMlQdH0gTF0aFRQYfSuPi7o2LdJ553nRP12dXFRDuCnlXROJmjKKKcBjY85ksXryy9MyyocL07LO5GXruu0GIf+KIkJ23kJrA/IS78n5uM+FYxmN2g5bK+dZ3bfcwBnwC6O4vJ10jaUeJYnD1MYCcrlVoYa6YPSWKLyZMIrfiHtqfVbv1BBr7OVTQbI/qg3KtD3GDMRT4zG5eFARXOIZRZTjvq58KnYrVi7CrtWj91FsVa/iSllHXbriM65mO//K6ghuCbtQydkv5PDUuNrOiy14F7/LQMM2dEfNjFfX3+piakUH8PEWLbnd/yGN4qLsex70E6LO+h9gJMBp33pD5yTmcXSv0JJQHUhFJvDrXki1+2eoA2saP7Aigb0a8JFWXrG0ScSQY6yox9w9GnAZ9pK3EmHePeKW4neOS5OpXIvrzII320RiW89h+DZKTSGlH1XsMRJ+CQ/RH/qhPjA9wVRrL9QlztR/ZkfPv4H&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <path d="M 5 110 L 175 110 L 185 120 L 185 300 L 15 300 L 5 290 L 5 110 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,95,205)" pointer-events="all"/>
+        <path d="M 15 300 L 15 120 L 5 110 M 15 120 L 185 120" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,95,205)" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-decoration="underline" font-size="12px">
+            <text x="3.5" y="140.5">
+                &lt;&lt;device&gt;&gt;
+            </text>
+            <text x="3.5" y="154.5">
+                Máquina do cliente
+            </text>
+        </g>
+        <path d="M 30 155 L 140 155 L 150 165 L 150 295 L 40 295 L 30 285 L 30 155 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,90,225)" pointer-events="all"/>
+        <path d="M 40 295 L 40 165 L 30 155 M 40 165 L 150 165" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,90,225)" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-decoration="underline" font-size="12px">
+            <text x="23.5" y="190.5">
+                &lt;&lt;browser&gt;&gt;
+            </text>
+            <text x="23.5" y="204.5">
+                Navegador
+            </text>
+        </g>
+        <path d="M 40 225 L 130 225 L 130 275 L 40 275 L 40 265 L 30 265 L 30 255 L 40 255 L 40 245 L 30 245 L 30 235 L 40 235 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 40 235 L 50 235 L 50 245 L 40 245 M 40 255 L 50 255 L 50 265 L 40 265" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="89.5" y="242.5">
+                React
+            </text>
+        </g>
+        <path d="M 205 75 L 605 75 L 615 85 L 615 335 L 215 335 L 205 325 L 205 75 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,410,205)" pointer-events="all"/>
+        <path d="M 215 335 L 215 85 L 205 75 M 215 85 L 615 85" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,410,205)" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-decoration="underline" font-size="12px">
+            <text x="283.5" y="25.5">
+                &lt;&lt;device&gt;&gt;
+            </text>
+            <text x="283.5" y="39.5">
+                Servidor
+            </text>
+        </g>
+        <path d="M 242 122 L 562 122 L 572 132 L 572 328 L 252 328 L 242 318 L 242 122 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,407,225)" pointer-events="all"/>
+        <path d="M 252 328 L 252 132 L 242 122 M 252 132 L 572 132" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,407,225)" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-decoration="underline" font-size="12px">
+            <text x="307.5" y="85.5">
+                &lt;&lt;environment&gt;&gt;
+            </text>
+            <text x="307.5" y="99.5">
+                Node.js
+            </text>
+        </g>
+        <path d="M 477 245 L 633.63 245" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 638.88 245 L 631.88 248.5 L 633.63 245 L 631.88 241.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="11px">
+            <rect fill="#ffffff" stroke="none" x="551" y="208" width="81" height="27" stroke-width="0"/>
+            <text x="590" y="218">
+                &lt;&lt;driver&gt;&gt;
+            </text>
+            <text x="590" y="231">
+                MongoDB driver
+            </text>
+        </g>
+        <path d="M 477 170 L 590 170 L 590 70 L 633.63 70" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 638.88 70 L 631.88 73.5 L 633.63 70 L 631.88 66.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="11px">
+            <rect fill="#ffffff" stroke="none" x="558" y="108" width="67" height="27" stroke-width="0"/>
+            <text x="590" y="118">
+                &lt;&lt;protocol&gt;&gt;
+            </text>
+            <text x="590" y="131">
+                SMTP
+            </text>
+        </g>
+        <path d="M 277 170 L 517 170 L 527 180 L 527 320 L 287 320 L 277 310 L 277 170 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,402,245)" pointer-events="all"/>
+        <path d="M 287 320 L 287 180 L 277 170 M 287 180 L 527 180" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,402,245)" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-decoration="underline" font-size="12px">
+            <text x="330.5" y="145.5">
+                Express.js
+            </text>
+        </g>
+        <path d="M 362 170 L 452 170 L 452 220 L 362 220 L 362 210 L 352 210 L 352 200 L 362 200 L 362 190 L 352 190 L 352 180 L 362 180 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 362 180 L 372 180 L 372 190 L 362 190 M 362 200 L 372 200 L 372 210 L 362 210" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="411.5" y="187.5">
+                Lógica da
+            </text>
+            <text x="411.5" y="201.5">
+                aplicação
+            </text>
+        </g>
+        <path d="M 362 230 L 452 230 L 452 280 L 362 280 L 362 270 L 352 270 L 352 260 L 362 260 L 362 250 L 352 250 L 352 240 L 362 240 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 362 240 L 372 240 L 372 250 L 362 250 M 362 260 L 372 260 L 372 270 L 362 270" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="411.5" y="247.5">
+                Controlador
+            </text>
+            <text x="411.5" y="261.5">
+                de rotas
+            </text>
+        </g>
+        <path d="M 362 290 L 452 290 L 452 340 L 362 340 L 362 330 L 352 330 L 352 320 L 362 320 L 362 310 L 352 310 L 352 300 L 362 300 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 362 300 L 372 300 L 372 310 L 362 310 M 362 320 L 372 320 L 372 330 L 362 330" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="411.5" y="307.5">
+                Middlewares
+            </text>
+            <text x="411.5" y="321.5">
+                de
+            </text>
+            <text x="411.5" y="335.5">
+                autenticação
+            </text>
+        </g>
+        <path d="M 160 225 L 297.63 225" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 302.88 225 L 295.88 228.5 L 297.63 225 L 295.88 221.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="11px">
+            <rect fill="#ffffff" stroke="none" x="206" y="193" width="67" height="27" stroke-width="0"/>
+            <text x="238.12" y="203">
+                &lt;&lt;protocol&gt;&gt;
+            </text>
+            <text x="238.12" y="216">
+                HTTP
+            </text>
+        </g>
+        <path d="M 667.5 152.5 L 782.5 152.5 L 792.5 162.5 L 792.5 332.5 L 677.5 332.5 L 667.5 322.5 L 667.5 152.5 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,730,242.5)" pointer-events="all"/>
+        <path d="M 677.5 332.5 L 677.5 162.5 L 667.5 152.5 M 677.5 162.5 L 792.5 162.5" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,730,242.5)" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-decoration="underline" font-size="12px">
+            <text x="643.5" y="205.5">
+                &lt;&lt;device&gt;&gt;
+            </text>
+            <text x="643.5" y="219.5">
+                Servidor de banco de dados
+            </text>
+        </g>
+        <path d="M 680 240 L 770 240 L 770 290 L 680 290 L 680 280 L 670 280 L 670 270 L 680 270 L 680 260 L 670 260 L 670 250 L 680 250 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 680 250 L 690 250 L 690 260 L 680 260 M 680 270 L 690 270 L 690 280 L 680 280" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="729.5" y="257.5">
+                &lt;&lt;database&gt;&gt;
+            </text>
+            <text x="729.5" y="271.5">
+                MongoDB
+            </text>
+        </g>
+        <path d="M 670 -20 L 780 -20 L 790 -10 L 790 160 L 680 160 L 670 150 L 670 -20 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,730,70)" pointer-events="all"/>
+        <path d="M 680 160 L 680 -10 L 670 -20 M 680 -10 L 790 -10" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,730,70)" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-decoration="underline" font-size="12px">
+            <text x="643.5" y="35.5">
+                &lt;&lt;device&gt;&gt;
+            </text>
+            <text x="643.5" y="49.5">
+                Serviço de e-mails
+            </text>
+        </g>
+        <path d="M 680 70 L 770 70 L 770 120 L 680 120 L 680 110 L 670 110 L 670 100 L 680 100 L 680 90 L 670 90 L 670 80 L 680 80 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 680 80 L 690 80 L 690 90 L 680 90 M 680 100 L 690 100 L 690 110 L 680 110" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <text x="729.5" y="87.5">
+                SendGrid
+            </text>
+        </g>
+    </g>
+</svg>
