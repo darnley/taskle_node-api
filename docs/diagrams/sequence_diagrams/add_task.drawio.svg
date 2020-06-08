@@ -1,27 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1071px" height="601px" viewBox="-0.5 -0.5 1071 601" content="&lt;mxfile host=&quot;&quot; modified=&quot;2020-06-01T20:10:57.777Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.45.1 Chrome/78.0.3904.130 Electron/7.2.4 Safari/537.36&quot; etag=&quot;tQ4RhCxGWnXIoyhEY09r&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;add_task&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1071px" height="601px" viewBox="-0.5 -0.5 1071 601" content="&lt;mxfile host=&quot;&quot; modified=&quot;2020-06-08T22:25:03.202Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.45.1 Chrome/78.0.3904.130 Electron/7.2.4 Safari/537.36&quot; etag=&quot;ZbwxAfBWScN_EluoDV34&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;add_task&quot;&gt;7Vttc6M2EP41nmk/NGMQb/5oO3fXzlxnMpfeXPtRAdlWg5EH5MTur68EwtYLtrEDBueSL4YFVujZZ1e7KzIA0+XmSwpXiz9JhOKBPYw2A3A/sG3LtR32wyXbQgI8rxDMUxyJm/aCR/wfEsKhkK5xhDLlRkpITPFKFYYkSVBIFRlMU/Kq3jYjsTrqCs6RIXgMYWxKf+CILgppYPt7+e8IzxflyJY3Kq4sYXmzmEm2gBF5lUTg0wBMU0JocbTcTFHMwStxKZ77fODq7sVSlNA6D4CgeOIFxmsxOfFidFvONiXrJEL8geEATF4XmKLHFQz51VdmXyab4TiekpikTJSQhF2ZmC8i3u0FpRRtJJF4sS+ILBFNt+wWcfU3R4C0Va3/uofcGvpCuJDw9oZCCIWd5zvdeyjYgUCjGhn7poGpggU0gAowUPmerWGKiQEOY/aKH66X8TikHIEJnyFmXvQVPqH4gWSYYpKwW54IpWTJboj5hQkMn+c5tCVyAxvM8j9JxzjGc/4sJRxnsqYxTtB05+/DZpB2VaAdE2hQyb+3A+2Y9APjPxjdNseQ/opniAPBZr9CKWajIg5gLMQPe1klXVm8pJDdx5+x8vM4hqsMP+VDcUxTFK7TDL+gbygrwvLwEPwHjNmcG1gj1TpeVXyoMI/TRHhwT4eHFcEJzYdwJwP3XrMJSemCzEkCY9kq54LmnAua4yqY+VWYVYQOpwHIvH5AdjbPPC3agiti5p/GDCXRmOc0+zlHMFvkyxL3YbTB9G/uknfM9MXpP8JD+fH9Rj7ZSicSxsfDaUbWaYgUG6NISaBMaCXs3ArsSlmKYkhZtFEzuAo8xQgPnD+S5VSyW65mkeLNxUNylqTrce40TbamicJ0jqihKTfvbtq1LF6RkIHx94yZ4SPuC8dyO4z7o34EseBc0DqM+6VildLjNV2w6bBcLs8CP8gtIh/okNyWZVqqkyV6eC5sXdK7olIE44eU/Mtok30QW1z17S6Jbdat3RDbPhe2Loldo8aRks8whlmGw2NsKbKkgVy59CRT9FVyWnoJXzdTtIITippLFC2znlrtgs5nCrNn9gOj6JdfDasx7jH4JhlNyTPSSFvRsoKi1xIyeyK5kVM2YZY4irjuyjCldskaiCSWFkmsiraMU0EVPWe/yCdqFGT7CVsHIGkABKDlCbvaRu5NVTWngiZQMIuUb2j2zmhWB+HWaGaWGRPIgytTezxvvm3MHb3XElwP81LH21y7nY5/l1y0axQF56UBPVnz9dzKCoCqou6iD+zR3Uj6c0/obS4HKE0h2UaKD+jdLf0H87Rr+EGNGuLydLisDHriG56rUVqB3dZrsrqe4lsH4lgLrmHuoP0c6bE36nANNUvGcYRDlqjAyNwivm2cLS1Xqdodbg3nGntpJ/aF+r46e86dM9wHoECNQG65M3bBVs4RtY5fLx4xYOFWuk30jo5OxtImoHyYww4KnReHu7fvFPadETYYtUKJE3rb4kQ+bMukqPF1142TAozaIcUJvW2RQh925LdLkBrbmTdOENfXEG2GH8fVtkWPfNR2Y0bZaXjHlPC9VihxXG1blMhHbZkSZgeIFU55AcurqHeV1Xf5ba1teh4Y/8Uw/thFLs0TaA2gq+4ig57sIu+Icgu7yKDVXeTSJH1ZWfyjbTO99K+7sgQBi/H11TbXRAM/6x5zoG247Dqe19j8q/j2/20eI3+hWwYP2Yv69dWurzfW9C3r2m6jdZuNVfpiR2Gn+//RKm7f/6cb+PQ/&lt;/diagram&gt;&lt;/mxfile&gt;">
     <defs/>
     <g>
         <rect x="0" y="0" width="1070" height="600" fill="none" stroke="#000000" pointer-events="all"/>
         <rect x="0" y="0" width="70" height="30" fill="none" stroke="#000000" pointer-events="all"/>
         <ellipse cx="105" cy="37.5" rx="7.5" ry="7.5" fill="#ffffff" stroke="#000000" pointer-events="all"/>
         <path d="M 105 45 L 105 70 M 105 50 L 90 50 M 105 50 L 120 50 M 105 70 L 90 90 M 105 70 L 120 90" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
-        <g transform="translate(-0.5 -0.5)">
-            <switch>
-                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 97px; margin-left: 105px;">
-                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
-                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; background-color: #ffffff; white-space: nowrap; ">
-                                <font color="#000000">
-                                    Usuario
-                                </font>
-                            </div>
-                        </div>
-                    </div>
-                </foreignObject>
-                <text x="105" y="109" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
-                    Usuar...
-                </text>
-            </switch>
+        <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
+            <rect fill="#ffffff" stroke="none" x="84" y="98" width="44" height="15" stroke-width="0"/>
+            <text x="104.5" y="107.5">
+                Usuario
+            </text>
         </g>
         <rect x="230" y="50" width="100" height="40" fill="#ffffff" stroke="#000000" pointer-events="all"/>
         <path d="M 280 90 L 280 450" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="all"/>
@@ -184,17 +172,7 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 180px; margin-left: 731px;">
                         <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
-                                <br/>
-                                <br/>
-                                <span style="color: rgb(240 , 240 , 240) ; font-family: &quot;helvetica&quot; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42) ; float: none ; display: inline">
-                                    projects/task/add()
-                                </span>
-                                <div>
-                                    <br/>
-                                </div>
-                                <div>
-                                    <br/>
-                                </div>
+                                projects/task/add()
                             </div>
                         </div>
                     </div>
@@ -271,17 +249,7 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 200px; margin-left: 871px;">
                         <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
-                                <br/>
-                                <br/>
-                                <span style="color: rgb(240 , 240 , 240) ; font-family: &quot;helvetica&quot; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42) ; float: none ; display: inline">
-                                    projects/task/add()
-                                </span>
-                                <div>
-                                    <br/>
-                                </div>
-                                <div>
-                                    <br/>
-                                </div>
+                                projects/task/add()
                             </div>
                         </div>
                     </div>
