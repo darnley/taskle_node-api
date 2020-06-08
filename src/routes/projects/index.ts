@@ -28,4 +28,7 @@ router.use('/:projectId/tasks', tasks)
 // Project/People
 router.use('/:projectId/people', people)
 
+// Project/Stats
+router.use('/:projectId/stats', stats)
+
 export default router
