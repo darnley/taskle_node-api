@@ -18,7 +18,9 @@ const getAll = async (req: Request, res: Response) => {
         .find({ project: projectId })
         .populate('responsible', userPopulateFields)
         .select('responsible')
-    ).map(t => t.responsible as IUser)
+    )
+      .map(t => t.responsible as IUser)
+      .filter(t => t)
 
     // Get people that are configured in visibility
     const peopleInProject: IUser[] = (
@@ -43,10 +45,11 @@ const getAll = async (req: Request, res: Response) => {
     )
 
     const joinedArray: IUser[] = [...peopleInTasks, ...peopleInProject, ...peopleInTeams]
+    const distinctedArray = distinctArrayOfObjects(joinedArray, '_id')
 
     res
       .status(200)
-      .json(distinctArrayOfObjects(joinedArray, '_id'))
+      .json(distinctedArray)
   } catch (err) {
     res
       .status(400)
