@@ -6,8 +6,11 @@ import authentication from '../middlewares/authentication'
 import teams from './teams'
 import keywords from './keywords'
 import me from './me'
+import health from './health'
 
 const router = Router()
+
+router.use('/health-check', health)
 
 router.use('/auth', auth)
 
