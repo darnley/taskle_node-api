@@ -1,4 +1,4 @@
-import { Router } from 'express'
+import { Router, Request, Response } from 'express'
 import people from './people'
 import projects from './projects'
 import auth from './auth'
@@ -7,10 +7,9 @@ import teams from './teams'
 import keywords from './keywords'
 import me from './me'
 import health from './health'
+import notFound from './errors/not-found'
 
 const router = Router()
-
-router.use('/health-check', health)
 
 router.use('/auth', auth)
 
@@ -19,5 +18,8 @@ router.use('/projects', authentication.authenticate(), projects)
 router.use('/teams', authentication.authenticate(), teams)
 router.use('/keywords', authentication.authenticate(), keywords)
 router.use('/me', authentication.authenticate(), me)
+
+router.use('/health-check', health)
+router.use('/*', notFound)
 
 export default router
