@@ -5,7 +5,6 @@ import Project from '../../../models/Project'
 import log from '../../../utils/log'
 import { ITeam } from '../../../models/Team'
 import { distinctArrayOfObjects } from '../../../utils/distinct'
-import addMostUserKeywords from '../../../services/userKeywords'
 
 const getAll = async (req: Request, res: Response) => {
   const projectId = req.params.projectId

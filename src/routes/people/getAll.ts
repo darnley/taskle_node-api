@@ -2,8 +2,10 @@ import { Request, Response } from 'express'
 import user from '../../models/User'
 
 const getAll = async (req: Request, res: Response): Promise<void> => {
+  const isActive: boolean = req.query.isActive === 'true' || req.query.isActive === '1'
+
   user
-    .find({ isActive: req.query.isActive || true })
+    .find({ isActive: isActive || true })
     .select('-password -salt')
     .populate('team', 'name')
     .then((users) => {
