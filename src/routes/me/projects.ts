@@ -3,50 +3,12 @@ import User, { IUser } from '../../models/User'
 import Task from '../../models/Task'
 import Project, { IProject } from '../../models/Project'
 import Team, { ITeam } from '../../models/Team'
+import getUserProjects from '../../services/getUserProjects'
 
 const getProjects = async (req: Request, res: Response) => {
   const userId = (req.user as IUser)._id
   try {
-    const user =
-    await User
-      .findById(userId)
-      .populate('team', '_id name')
-      .select('team')
-
-    let projects: (string | IProject)[] = []
-
-    const taskProjects = (await Task
-      .find({ responsible: userId })
-      .populate({
-        path: 'project',
-        select: 'name description keywords createdAt status',
-        populate: {
-          path: 'manager',
-          select: 'firstName lastName emailAddress'
-        }
-      })
-      .select('project'))
-      .map(t => t.project)
-
-    const teamProjects = (await Project.find({
-      $and: [{
-        $or: [
-          { manager: userId },
-          { 'visibility.users': userId },
-          { 'visibility.teams': (user?.team as ITeam).id }
-        ]
-      },
-      {
-        _id: {
-          $nin: (taskProjects as IProject[]).map(t => t._id)
-        }
-      }]
-
-    })
-      // .populate('name description keywords createdAt')
-      .populate('manager', 'firstName lastName emailAddress'))
-
-    projects = [...taskProjects, ...teamProjects]
+    const projects = await getUserProjects(userId)
 
     res
       .json([...new Set(projects)])

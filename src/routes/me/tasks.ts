@@ -3,14 +3,12 @@ import { IUser } from '../../models/User'
 import Task from '../../models/Task'
 import ProjectStatus from '../../enums/projectStatus'
 import { IProject } from '../../models/Project'
+import getUserTasks from '../../services/getUserTasks'
 
 const getTasks = (req: Request, res: Response) => {
   const userId = (req.user as IUser)._id
 
-  Task
-    .find({ responsible: userId })
-    .populate('project', 'name description keywords status')
-    .populate('responsible', 'firstName lastName')
+  getUserTasks(userId)
     .then((tasks) => {
       res
         .json(tasks.filter(t => (t.project as IProject).status !== ProjectStatus.Ended))
