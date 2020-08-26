@@ -1,160 +1,126 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="821px" height="411px" viewBox="-0.5 -0.5 821 411" content="&lt;mxfile host=&quot;&quot; modified=&quot;2020-05-31T18:06:03.776Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.45.1 Chrome/78.0.3904.130 Electron/7.2.4 Safari/537.36&quot; etag=&quot;zcjaHgNc0X8lGVGbPqYv&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Diagrama de componentes&quot;&gt;5VnLcuMoFP0aLZMSQi8vYzudXsRTqXaqZmaJJSzTJQsNQo49Xz8ggd6x3W3F3RlvbHEECM65F46QAWfb/RND6WZBQxwblhnuDTg3LMudeOJXAocScHwFRIyEJQRqYEn+xQo0FZqTEGetipzSmJO0DQY0SXDAWxhijL61q61p3H5qiiLcA5YBivvonyTkmxL1La/Gv2ISbfSTgTsp72yRrqxmkm1QSN8aEHw04IxRysur7X6GY8md5qVs9+Wdu9XAGE74OQ2sssEOxbmam2G5sWg61f8h3pEAi1KkUP1vWFDoAacLYwaNB/BPThIkNaWS+JiIAWA1R37QxO0w40Tw+BCTKBEQp6noAalSjNey7yxFAUmiV3lv7tfAc3F7btXIN8UxKLANSuVjgnyFZbGMmmKIIWEiDAiVD8loLjWYrmnCl2pkdjGjLnOKTDlmvG9AisknTLeYs4Ooou5qUVVUA+iU5bc6RsBE1dk048NXIFJxGVVd19KJC6XesJLwpJIrGfiYHZHyD7TDkQhIdmPC2R3h/AHh7CHhrBGEs3vCfcNILFpdCTRNWxrmEnuHfU222agRyGRkAhiWcQQGnTaDlj3AoDnAoDMCge7la9gSsx25vbiHZkc2s6ea5Q6oZoMRZPNOyoaTHWE02coJHlm0hLu4/57dmnR63VDS+QPSmW5fOghHkA5MBrTr0I9DYZlUkTK+oRFNUPxYo1NG8yTEskvJW13nmRZqAAF+x5wflP9DOadFUIjB/qUaFYW/m4W55Md1qqKkR+6vqvyCGRHTlYth0eZdJYR0LFBT8UuIIxZhXUutb3KWR+ViOEac7NrG8RLuq1A5stwx8cBj+/yCJhGdT6VbU1UHxHtGK+Haz9hEtiQMS0GxSAS0KjqRj0kpSXgxVWdqOPNhunUodSO/cu+qQ6NpkIcywrwX5spqb+Rl6WwNVN8vctx1x8BtdXqnM0/3QNfrDPOehtUIz5O1bwOullI/mwR6iOMlQdH0gTF0aFRQYfSuPi7o2LdJ553nRP12dXFRDuCnlXROJmjKKKcBjY85ksXryy9MyyocL07LO5GXruu0GIf+KIkJ23kJrA/IS78n5uM+FYxmN2g5bK+dZ3bfcwBnwC6O4vJ10jaUeJYnD1MYCcrlVoYa6YPSWKLyZMIrfiHtqfVbv1BBr7OVTQbI/qg3KtD3GDMRT4zG5eFARXOIZRZTjvq58KnYrVi7CrtWj91FsVa/iSllHXbriM65mO//K6ghuCbtQydkv5PDUuNrOiy14F7/LQMM2dEfNjFfX3+piakUH8PEWLbnd/yGN4qLsex70E6LO+h9gJMBp33pD5yTmcXSv0JJQHUhFJvDrXki1+2eoA2saP7Aigb0a8JFWXrG0ScSQY6yox9w9GnAZ9pK3EmHePeKW4neOS5OpXIvrzII320RiW89h+DZKTSGlH1XsMRJ+CQ/RH/qhPjA9wVRrL9QlztR/ZkfPv4H&lt;/diagram&gt;&lt;/mxfile&gt;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="791px" height="301px" viewBox="-0.5 -0.5 791 301" content="&lt;mxfile host=&quot;1f2b2278-5be2-4aab-977b-64448ee2f854&quot; modified=&quot;2020-08-26T23:32:08.885Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.48.2 Chrome/78.0.3904.130 Electron/7.3.2 Safari/537.36&quot; etag=&quot;qbyPrdtqFoBa0UgBrXHz&quot; version=&quot;13.1.3&quot;&gt;&lt;diagram id=&quot;6hGFLwfOUW9BJ-s0fimq&quot; name=&quot;Diagrama de componentes&quot;&gt;5Vlbc5s4GP01PMYDiJsfYztNH5KdTp2Z7j7KIGPtYMQI+ba/vhISN6HYTkOddusHjI6unPNdhLDAfHt8pLDYPJMEZZZrJ0cLLCzXnQaAXwVwkgCwFZBSnEjIaYEl/g8p0FboDieo7DVkhGQMF30wJnmOYtbDIKXk0G+2Jll/1gKmaAAsY5gN0W84YRuJRm7Y4p8RTjf1zE4wlTVbWDdWT1JuYEIOHQg8WGBOCWHybnuco0xwV/Mi+316pbZZGEU5u6aDKzvsYbZTz2a5Qca7zur/BO1xjHgpVWj9b7mA6wFm8wzzyZB6HnaqSdojyjDn7D7Dac4hRgreGqpShtZinLKAMc7TF1G3iFrgqapeuC3yVfHpVNgGFmKaeLdCoigtpFpOgimXHBMxSUl2gu/ZmuRsqVbmVavXWVLEiTWjYwdSrD0iskWMnngTVVsLqCzYAb4sH1p7cKaqzaZrC5ECobLBtBm6lYnfKKXMqoGLqq2EkSN6Rra/4B6l3PjoHyacpwkXGYTzTMK5IwjnDYT7iiAPULoENU1bkuwE9gr7Ndl2p0UsnJFywCzjCAz6fQZdz8CgbWDQH4HA4P3xaonoHld2bx/Q6g+zfqCZfx2NLoUtYI8gnjM1qKfRjxKeaVWRULYhKclh9tCiM0p2eYLEkIK3ts0TqdRwOPgvYuyktg1wxwiH0BGzv1W1uP9H9J+Evioujmq8qnBShVcJ5wrRWNuUiJWflYCiDDK87+8hTHyqrl8I5tO2gWsa9v0u8PtDyEWpXt2crw0UBPb5gRikKWKDge4phadOs0I0KF9fsB/qodY9uy69fb2u1rrkClpba8i9yvwabzkTPCjX51zWfCZ5ShYzsXdVTQ32+wRXfL97RUje4iSRNo14LICrahAxjaKWj+jPLH9hNsXam3Tnb/a9akCru7U0BQV7wn3e7WslS+812WiiGe2dPQns7s/x+oOS9bpETNP9zUoP8+wHBxr31w00b3XrQMv/jh+9Kdxo7ftufTHqOaE9sd3IDx1PXseJgfWiLsXAHzFG/2LYKShhJCbZuV3L88uXDww2jUe9O9jwCOAEdcap3/+jUcJNMJ2ETje2aBJPvGja+WmKjxJ5ah/tiP1kzYE1AynXQqQN2BEVFplAef19WF0BGWj8S78KgFBLG7d8F3CG+XzOd8yUZPK1tqE5QcK2CIPl781uc+hwE3aHR0PPVQQ58EcqNXZbi94x/rz/L6N2p7c0atPZzo22LlftQtT6ZH7sO+LPfgMCdRbSTx7GT9qOaQf55qT9+eVDk3ZjS2MkbdcLox77d044StZ2vYnTd7g7EP6M1HzF2RHkjMDy4umRDG5EpHORWlYwj4mebxKehH6zfBPoL+CmQ23T2WgwQuAzHO0tUZ48ii9Ct2bR4DADYq9m0fhpYCQWebH9ViR9ov3gBh6+Aw==&lt;/diagram&gt;&lt;/mxfile&gt;">
     <defs/>
     <g>
-        <path d="M 5 110 L 175 110 L 185 120 L 185 300 L 15 300 L 5 290 L 5 110 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,95,205)" pointer-events="all"/>
-        <path d="M 15 300 L 15 120 L 5 110 M 15 120 L 185 120" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,95,205)" pointer-events="all"/>
+        <path d="M 5 50 L 175 50 L 185 60 L 185 240 L 15 240 L 5 230 L 5 50 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,95,145)" pointer-events="all"/>
+        <path d="M 15 240 L 15 60 L 5 50 M 15 60 L 185 60" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,95,145)" pointer-events="all"/>
         <g fill="#000000" font-family="Helvetica" text-decoration="underline" font-size="12px">
-            <text x="3.5" y="140.5">
+            <text x="3.5" y="80.5">
                 &lt;&lt;device&gt;&gt;
             </text>
-            <text x="3.5" y="154.5">
-                Máquina do cliente
+            <text x="3.5" y="94.5">
+                Cliente
             </text>
         </g>
-        <path d="M 30 155 L 140 155 L 150 165 L 150 295 L 40 295 L 30 285 L 30 155 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,90,225)" pointer-events="all"/>
-        <path d="M 40 295 L 40 165 L 30 155 M 40 165 L 150 165" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,90,225)" pointer-events="all"/>
+        <path d="M 30 95 L 140 95 L 150 105 L 150 235 L 40 235 L 30 225 L 30 95 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,90,165)" pointer-events="all"/>
+        <path d="M 40 235 L 40 105 L 30 95 M 40 105 L 150 105" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,90,165)" pointer-events="all"/>
         <g fill="#000000" font-family="Helvetica" text-decoration="underline" font-size="12px">
-            <text x="23.5" y="190.5">
+            <text x="23.5" y="130.5">
                 &lt;&lt;browser&gt;&gt;
             </text>
-            <text x="23.5" y="204.5">
+            <text x="23.5" y="144.5">
                 Navegador
             </text>
         </g>
-        <path d="M 40 225 L 130 225 L 130 275 L 40 275 L 40 265 L 30 265 L 30 255 L 40 255 L 40 245 L 30 245 L 30 235 L 40 235 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 40 235 L 50 235 L 50 245 L 40 245 M 40 255 L 50 255 L 50 265 L 40 265" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 40 165 L 130 165 L 130 215 L 40 215 L 40 205 L 30 205 L 30 195 L 40 195 L 40 185 L 30 185 L 30 175 L 40 175 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 40 175 L 50 175 L 50 185 L 40 185 M 40 195 L 50 195 L 50 205 L 40 205" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
         <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
-            <text x="89.5" y="242.5">
+            <text x="89.5" y="182.5">
                 React
             </text>
         </g>
-        <path d="M 205 75 L 605 75 L 615 85 L 615 335 L 215 335 L 205 325 L 205 75 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,410,205)" pointer-events="all"/>
-        <path d="M 215 335 L 215 85 L 205 75 M 215 85 L 615 85" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,410,205)" pointer-events="all"/>
+        <path d="M 265 55 L 555 55 L 565 65 L 565 245 L 275 245 L 265 235 L 265 55 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,415,150)" pointer-events="all"/>
+        <path d="M 275 245 L 275 65 L 265 55 M 275 65 L 565 65" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,415,150)" pointer-events="all"/>
         <g fill="#000000" font-family="Helvetica" text-decoration="underline" font-size="12px">
-            <text x="283.5" y="25.5">
+            <text x="323.5" y="25.5">
                 &lt;&lt;device&gt;&gt;
             </text>
-            <text x="283.5" y="39.5">
-                Servidor
+            <text x="323.5" y="39.5">
+                Servidor web
             </text>
         </g>
-        <path d="M 242 122 L 562 122 L 572 132 L 572 328 L 252 328 L 242 318 L 242 122 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,407,225)" pointer-events="all"/>
-        <path d="M 252 328 L 252 132 L 242 122 M 252 132 L 572 132" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,407,225)" pointer-events="all"/>
-        <g fill="#000000" font-family="Helvetica" text-decoration="underline" font-size="12px">
-            <text x="307.5" y="85.5">
-                &lt;&lt;environment&gt;&gt;
-            </text>
-            <text x="307.5" y="99.5">
-                Node.js
-            </text>
-        </g>
-        <path d="M 477 245 L 633.63 245" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
-        <path d="M 638.88 245 L 631.88 248.5 L 633.63 245 L 631.88 241.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 452 102.5 L 550.03 102.49 L 550.03 185 L 633.63 185" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 638.88 185 L 631.88 188.5 L 633.63 185 L 631.88 181.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
         <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="11px">
-            <rect fill="#ffffff" stroke="none" x="551" y="208" width="81" height="27" stroke-width="0"/>
-            <text x="590" y="218">
+            <rect fill="#ffffff" stroke="none" x="560" y="153" width="81" height="27" stroke-width="0"/>
+            <text x="599.78" y="162.79">
                 &lt;&lt;driver&gt;&gt;
             </text>
-            <text x="590" y="231">
+            <text x="599.78" y="175.79">
                 MongoDB driver
             </text>
         </g>
-        <path d="M 477 170 L 590 170 L 590 70 L 633.63 70" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
-        <path d="M 638.88 70 L 631.88 73.5 L 633.63 70 L 631.88 66.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 452 77.5 L 630.03 77.51 L 633.64 77.69" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 638.88 77.95 L 631.72 81.1 L 633.64 77.69 L 632.06 74.11 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
         <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="11px">
-            <rect fill="#ffffff" stroke="none" x="558" y="108" width="67" height="27" stroke-width="0"/>
-            <text x="590" y="118">
+            <rect fill="#ffffff" stroke="none" x="567" y="43" width="67" height="27" stroke-width="0"/>
+            <text x="599.78" y="52.78">
                 &lt;&lt;protocol&gt;&gt;
             </text>
-            <text x="590" y="131">
+            <text x="599.78" y="65.78">
                 SMTP
             </text>
         </g>
-        <path d="M 277 170 L 517 170 L 527 180 L 527 320 L 287 320 L 277 310 L 277 170 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,402,245)" pointer-events="all"/>
-        <path d="M 287 320 L 287 180 L 277 170 M 287 180 L 527 180" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,402,245)" pointer-events="all"/>
-        <g fill="#000000" font-family="Helvetica" text-decoration="underline" font-size="12px">
-            <text x="330.5" y="145.5">
-                Express.js
-            </text>
-        </g>
-        <path d="M 362 170 L 452 170 L 452 220 L 362 220 L 362 210 L 352 210 L 352 200 L 362 200 L 362 190 L 352 190 L 352 180 L 362 180 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 362 180 L 372 180 L 372 190 L 362 190 M 362 200 L 372 200 L 372 210 L 362 210" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 362 65 L 452 65 L 452 115 L 362 115 L 362 105 L 352 105 L 352 95 L 362 95 L 362 85 L 352 85 L 352 75 L 362 75 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 362 75 L 372 75 L 372 85 L 362 85 M 362 95 L 372 95 L 372 105 L 362 105" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
         <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
-            <text x="411.5" y="187.5">
+            <text x="411.5" y="82.5">
                 Lógica da
             </text>
-            <text x="411.5" y="201.5">
+            <text x="411.5" y="96.5">
                 aplicação
             </text>
         </g>
-        <path d="M 362 230 L 452 230 L 452 280 L 362 280 L 362 270 L 352 270 L 352 260 L 362 260 L 362 250 L 352 250 L 352 240 L 362 240 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 362 240 L 372 240 L 372 250 L 362 250 M 362 260 L 372 260 L 372 270 L 362 270" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 362 140 L 452 140 L 452 190 L 362 190 L 362 180 L 352 180 L 352 170 L 362 170 L 362 160 L 352 160 L 352 150 L 362 150 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 362 150 L 372 150 L 372 160 L 362 160 M 362 170 L 372 170 L 372 180 L 362 180" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
         <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
-            <text x="411.5" y="247.5">
+            <text x="411.5" y="157.5">
                 Controlador
             </text>
-            <text x="411.5" y="261.5">
+            <text x="411.5" y="171.5">
                 de rotas
             </text>
         </g>
-        <path d="M 362 290 L 452 290 L 452 340 L 362 340 L 362 330 L 352 330 L 352 320 L 362 320 L 362 310 L 352 310 L 352 300 L 362 300 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 362 300 L 372 300 L 372 310 L 362 310 M 362 320 L 372 320 L 372 330 L 362 330" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 362 215 L 452 215 L 452 265 L 362 265 L 362 255 L 352 255 L 352 245 L 362 245 L 362 235 L 352 235 L 352 225 L 362 225 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 362 225 L 372 225 L 372 235 L 362 235 M 362 245 L 372 245 L 372 255 L 362 255" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
         <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
-            <text x="411.5" y="307.5">
+            <text x="411.5" y="232.5">
                 Middlewares
             </text>
-            <text x="411.5" y="321.5">
+            <text x="411.5" y="246.5">
                 de
             </text>
-            <text x="411.5" y="335.5">
+            <text x="411.5" y="260.5">
                 autenticação
             </text>
         </g>
-        <path d="M 160 225 L 297.63 225" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
-        <path d="M 302.88 225 L 295.88 228.5 L 297.63 225 L 295.88 221.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 160 165 L 345.63 165" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 350.88 165 L 343.88 168.5 L 345.63 165 L 343.88 161.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
         <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="11px">
-            <rect fill="#ffffff" stroke="none" x="206" y="193" width="67" height="27" stroke-width="0"/>
-            <text x="238.12" y="203">
+            <rect fill="#ffffff" stroke="none" x="223" y="133" width="67" height="27" stroke-width="0"/>
+            <text x="255.91000000000003" y="142.79">
                 &lt;&lt;protocol&gt;&gt;
             </text>
-            <text x="238.12" y="216">
+            <text x="255.91000000000003" y="155.79">
                 HTTP
             </text>
         </g>
-        <path d="M 667.5 152.5 L 782.5 152.5 L 792.5 162.5 L 792.5 332.5 L 677.5 332.5 L 667.5 322.5 L 667.5 152.5 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,730,242.5)" pointer-events="all"/>
-        <path d="M 677.5 332.5 L 677.5 162.5 L 667.5 152.5 M 677.5 162.5 L 792.5 162.5" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,730,242.5)" pointer-events="all"/>
-        <g fill="#000000" font-family="Helvetica" text-decoration="underline" font-size="12px">
-            <text x="643.5" y="205.5">
-                &lt;&lt;device&gt;&gt;
-            </text>
-            <text x="643.5" y="219.5">
-                Servidor de banco de dados
-            </text>
-        </g>
-        <path d="M 680 240 L 770 240 L 770 290 L 680 290 L 680 280 L 670 280 L 670 270 L 680 270 L 680 260 L 670 260 L 670 250 L 680 250 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 680 250 L 690 250 L 690 260 L 680 260 M 680 270 L 690 270 L 690 280 L 680 280" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 660 155 L 790 155 L 790 215 L 660 215 L 660 195 L 650 195 L 650 185 L 660 185 L 660 175 L 650 175 L 650 165 L 660 165 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 660 165 L 670 165 L 670 175 L 660 175 M 660 185 L 670 185 L 670 195 L 660 195" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
         <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
-            <text x="729.5" y="257.5">
+            <text x="729.5" y="172.5">
                 &lt;&lt;database&gt;&gt;
             </text>
-            <text x="729.5" y="271.5">
-                MongoDB
+            <text x="729.5" y="186.5">
+                Serviço de banco
+            </text>
+            <text x="729.5" y="200.5">
+                de dados
             </text>
         </g>
-        <path d="M 670 -20 L 780 -20 L 790 -10 L 790 160 L 680 160 L 670 150 L 670 -20 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,730,70)" pointer-events="all"/>
-        <path d="M 680 160 L 680 -10 L 670 -20 M 680 -10 L 790 -10" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,730,70)" pointer-events="all"/>
-        <g fill="#000000" font-family="Helvetica" text-decoration="underline" font-size="12px">
-            <text x="643.5" y="35.5">
-                &lt;&lt;device&gt;&gt;
-            </text>
-            <text x="643.5" y="49.5">
-                Serviço de e-mails
-            </text>
-        </g>
-        <path d="M 680 70 L 770 70 L 770 120 L 680 120 L 680 110 L 670 110 L 670 100 L 680 100 L 680 90 L 670 90 L 670 80 L 680 80 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 680 80 L 690 80 L 690 90 L 680 90 M 680 100 L 690 100 L 690 110 L 680 110" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 660 55 L 790 55 L 790 115 L 660 115 L 660 95 L 650 95 L 650 85 L 660 85 L 660 75 L 650 75 L 650 65 L 660 65 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 660 65 L 670 65 L 670 75 L 660 75 M 660 85 L 670 85 L 670 95 L 660 95" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
         <g fill="#000000" font-family="Helvetica" text-anchor="middle" font-size="12px">
-            <text x="729.5" y="87.5">
+            <text x="729.5" y="72.5">
                 SendGrid
             </text>
         </g>
