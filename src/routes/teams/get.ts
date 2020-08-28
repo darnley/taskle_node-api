@@ -2,7 +2,7 @@ import { Request, Response } from 'express'
 import team from '../../models/Team'
 
 const getAll = (req: Request, res: Response) => {
-  team.findById(req.params.id)
+  team.findById(req.params.teamId)
     .then((team) => {
       if (team) {
         res.json(team)
