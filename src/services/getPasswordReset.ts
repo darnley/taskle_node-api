@@ -1,14 +1,8 @@
 import User from '../models/User'
 import uuid from 'uuid-random'
-import PasswordReset from '../models/PasswordReset'
+import PasswordReset, { IPasswordReset } from '../models/PasswordReset'
 
-export interface IPasswordResetReturnData {
-  userId: string;
-  key1: string;
-  key2: string;
-}
-
-export default async function getPasswordReset (userId: string): Promise<IPasswordResetReturnData> {
+export default async function getPasswordReset (userId: string): Promise<IPasswordReset> {
   if (!userId) {
     throw new Error('Parameter \'userId\' is required.')
   }
@@ -25,9 +19,7 @@ export default async function getPasswordReset (userId: string): Promise<IPasswo
 
     passwordReset
       .save()
-      .then(res => {
-        resolve({ userId: res.user.toString(), key1, key2 } as IPasswordResetReturnData)
-      })
+      .then(resolve)
       .catch(reject)
   })
 };

@@ -3,6 +3,7 @@ import User from '../../models/User'
 import argon2 from 'argon2'
 import uuid from 'uuid-random'
 import { sendMailOnPersonCreation } from '../../services/mail/sendMailOnPersonCreation'
+import getPasswordReset from '../../services/getPasswordReset'
 
 const add = async (req: Request, res: Response): Promise<void> => {
   const user = new User(req.body)
@@ -17,11 +18,14 @@ const add = async (req: Request, res: Response): Promise<void> => {
       delete user.password
       delete user.salt
 
-      sendMailOnPersonCreation(user)
+      getPasswordReset(user._id)
+        .then(pwInfo => {
+          sendMailOnPersonCreation(user, pwInfo)
 
-      res
-        .status(201)
-        .json(user)
+          res
+            .status(201)
+            .json(user)
+        })
     })
     .catch((reason) => {
       res
