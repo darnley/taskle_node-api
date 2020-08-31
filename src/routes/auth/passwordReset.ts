@@ -30,6 +30,9 @@ const passwordReset = async (req: Request, res: Response, next: NextFunction): P
   await User
     .findByIdAndUpdate(userId, { salt: salt, password: hashedPassword })
 
+  await PasswordReset
+    .findByIdAndRemove(passwordResetRequest?._id)
+
   res
     .status(200)
     .json({})
