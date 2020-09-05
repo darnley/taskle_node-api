@@ -8,6 +8,7 @@ import keywords from './keywords'
 import me from './me'
 import health from './health'
 import notFound from './errors/not-found'
+import org from './org'
 
 const router = Router()
 
@@ -18,6 +19,7 @@ router.use('/projects', authentication.authenticate(), projects)
 router.use('/teams', authentication.authenticate(), teams)
 router.use('/keywords', authentication.authenticate(), keywords)
 router.use('/me', authentication.authenticate(), me)
+router.use('/org', authentication.authenticate(), org)
 
 router.use('/health-check', health)
 router.use('/*', notFound)
