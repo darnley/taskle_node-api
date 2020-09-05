@@ -3,6 +3,6 @@ import stats from './stats'
 
 const router = Router()
 
-router.use('/:projectId/stats', stats)
+router.use('/stats', stats)
 
 export default router
