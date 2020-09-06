@@ -3,7 +3,7 @@ networks:
   api_server_default:
     external: false
 services:
-  trackle:
+  taskle_back-end:
     networks:
       - api_server_default
     build:
