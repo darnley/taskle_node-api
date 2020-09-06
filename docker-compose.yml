@@ -17,5 +17,8 @@ services:
       JWT_EXPIRATION_IN_HOURS: 6
       MONGODB_CONNECTION_STRING: mongo://root:password123@mongo
       MONGODB_DATABASE_NAME: taskle_db
+      SENDGRID_API_KEY: <SendGrid API key>
+      SENDGRID_FROM_MAIL: no-reply@taskle.company.com.br
+      FRONTEND_HTTP_BASE_URL: http://<base url>
     ports:
       - 3333:3000
