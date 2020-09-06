@@ -7,7 +7,7 @@ FROM node:${NODE_VERSION}-slim AS dependencies
 WORKDIR /home/node/
 
 RUN apt-get update
-RUN apt-get install -y build-essential
+RUN apt-get install -y build-essential python3
 
 COPY . .
 
