@@ -37,11 +37,7 @@ class App {
    * @memberof App
    */
   private middlewares (): void {
-    if (this.isDevelopmentEnvironment()) {
-      this.express.use(morgan('dev'))
-    } else {
-      this.express.use(morgan('common'))
-    }
+    this.express.use(morgan('common'))
 
     this.express.set('trust proxy', true)
     this.express.use(requestIp.mw())

@@ -11,14 +11,14 @@ services:
       dockerfile: Dockerfile
     environment:
       NODE_ENV: production
-      HTTP_PORT: 3000
-      JWT_SECRET: 123123
-      JWT_SESSION: "FALSE"
-      JWT_EXPIRATION_IN_HOURS: 6
-      MONGODB_CONNECTION_STRING: mongo://root:password123@mongo
-      MONGODB_DATABASE_NAME: taskle_db
-      SENDGRID_API_KEY: <SendGrid API key>
-      SENDGRID_FROM_MAIL: no-reply@taskle.company.com.br
-      FRONTEND_HTTP_BASE_URL: http://<base url>
+      HTTP_PORT: ${HTTP_PORT}
+      JWT_SECRET: ${JWT_SECRET}
+      JWT_SESSION: ${JWT_SESSION}
+      JWT_EXPIRATION_IN_HOURS: ${JWT_EXPIRATION_IN_HOURS}
+      MONGODB_CONNECTION_STRING: ${MONGODB_CONNECTION_STRING}
+      MONGODB_DATABASE_NAME: ${MONGODB_DATABASE_NAME}
+      SENDGRID_API_KEY: ${SENDGRID_API_KEY}
+      SENDGRID_FROM_MAIL: ${SENDGRID_FROM_MAIL}
+      FRONTEND_HTTP_BASE_URL: ${FRONTEND_HTTP_BASE_URL}
     ports:
-      - 3333:3000
+      - ${HTTP_PORT}:80

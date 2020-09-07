@@ -16,9 +16,6 @@ RUN yarn global add rimraf
 RUN yarn install --frozen-lock
 RUN yarn build
 
-RUN rimraf node_modules
-RUN yarn install --frozen-lock --production
-
 # APPLICATION EXECUTION
 
 FROM node:${NODE_VERSION}-slim
@@ -28,8 +25,8 @@ COPY --from=dependencies /home/node .
 
 ENV PATH="$PATH:/home/node/node_modules/.bin"
 ENV NODE_ENV production
-ENV PORT 3000
+ENV PORT 80
 
-EXPOSE 3000
+EXPOSE 80
 
 CMD ["node", "."]
