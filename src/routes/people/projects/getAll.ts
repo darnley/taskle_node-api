@@ -2,7 +2,7 @@ import { Request, Response } from 'express'
 import Task from '../../../models/Task'
 
 const getAll = async (req: Request, res: Response): Promise<void> => {
-  const userId = req.body.id
+  const userId = req.params.userId
 
   Task
     .find({ responsible: userId })

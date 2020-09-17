@@ -15,6 +15,6 @@ router.get('/:id', get)
 router.put('/:userId', update)
 router.get('/:id/update-star-rating', updateStarRating)
 router.use('/:id/stats', stats)
-router.use('/:id/projects', projects)
+router.use('/:userId/projects', projects)
 
 export default router
