@@ -3,11 +3,21 @@ import Task from '../../../models/Task'
 
 const getAll = async (req: Request, res: Response): Promise<void> => {
   const userId = req.params.userId
+  const monthHistory: number = parseInt(req.query.monthHistory) ?? -1
+
+  let queryArguments: any = {}
+
+  if (monthHistory > 0) {
+    const currentDate = new Date()
+    currentDate.setMonth(currentDate.getMonth() - monthHistory)
+    queryArguments = { ...queryArguments, createdAt: { $lt: new Date(), $gt: currentDate } }
+  }
 
   Task
     .find({ responsible: userId })
     .populate('project')
     .select('project')
+    .find(queryArguments)
     .then(projects => {
       res
         .status(200)
