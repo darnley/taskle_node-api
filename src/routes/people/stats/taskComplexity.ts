@@ -4,10 +4,19 @@ import { Types } from 'mongoose'
 
 const taskComplexity = async (req: Request, res: Response): Promise<void> => {
   const personId = req.params.id
+  const monthHistory: number = parseInt(req.query.monthHistory) ?? -1
+
+  let queryArguments: any = { responsible: Types.ObjectId(personId) }
+
+  if (monthHistory > 0) {
+    const currentDate = new Date()
+    currentDate.setMonth(currentDate.getMonth() - monthHistory)
+    queryArguments = { ...queryArguments, createdAt: { $lt: new Date(), $gt: currentDate } }
+  }
 
   Task
     .aggregate()
-    .match({ responsible: Types.ObjectId(personId) })
+    .match(queryArguments)
     .group({
       _id: '$complexity',
       count: {
