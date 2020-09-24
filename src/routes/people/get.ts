@@ -2,7 +2,7 @@ import { Request, Response } from 'express'
 import user from '../../models/User'
 
 const getAll = async (req: Request, res: Response): Promise<void> => {
-  const userId = req.params.id
+  const userId = req.params.userId
 
   user
     .findById(userId)

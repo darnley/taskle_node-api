@@ -3,7 +3,7 @@ import Task from '../../../models/Task'
 import { Types } from 'mongoose'
 
 const taskComplexity = async (req: Request, res: Response): Promise<void> => {
-  const personId = req.params.id
+  const personId = req.params.userId
   const monthHistory: number = parseInt(req.query.monthHistory) ?? -1
 
   let queryArguments: any = { responsible: Types.ObjectId(personId) }

@@ -2,7 +2,7 @@ import { Request, Response } from 'express'
 import updateUserStarRating from '../../services/updateUserStarRating'
 
 const updateStarRating = async (req: Request, res: Response): Promise<void> => {
-  const userId = req.params.id
+  const userId = req.params.userId
 
   updateUserStarRating([userId])
 
