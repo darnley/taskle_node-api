@@ -65,7 +65,7 @@ export function updateUserKeywords (userId: string): Promise<IUser> {
       .exists({ _id: userId })
       .then(userExists => {
         if (userExists) {
-          getUserKeywords(userId)
+          getUserKeywords(userId, -1)
             .then(userKeywords => {
               User.findByIdAndUpdate(userId, { $set: { keywords: userKeywords.sort((a, b) => b.count - a.count) } })
                 .then(updatedUser => {
