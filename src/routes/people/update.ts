@@ -1,10 +1,12 @@
 import { Request, Response } from 'express'
-import User from '../../models/User'
+import User, { IUser } from '../../models/User'
 import Team from '../../models/Team'
+import Role from '../../enums/roles'
 
 const update = async (req: Request, res: Response) => {
   const userId = req.params.userId
   const newDataUser = new User(req.body)
+  const loggedUser = (req.user as IUser);
 
   newDataUser._id = userId
   delete newDataUser.password
@@ -23,8 +25,14 @@ const update = async (req: Request, res: Response) => {
         user.position = newDataUser.position
         user.team = newDataUser.team
 
-        if (newDataUser.role) {
-          user.role = newDataUser.role
+        if(loggedUser.role === Role.Super) {
+          if (newDataUser.role) {
+            user.role = newDataUser.role
+          }
+  
+          if (newDataUser.isActive !== null) {
+            user.isActive = newDataUser.isActive
+          }
         }
 
         const result = await user?.save()
