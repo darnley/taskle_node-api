@@ -3,9 +3,10 @@ import user from '../../models/User'
 
 const getAll = async (req: Request, res: Response): Promise<void> => {
   const isActive: boolean = req.query.isActive === 'true' || req.query.isActive === '1'
+  const whereObject = isActive ? { isActive: true } : {}
 
   user
-    .find({ isActive: isActive || true })
+    .find(whereObject)
     .select('-password -salt')
     .populate('team', 'name')
     .then((users) => {
