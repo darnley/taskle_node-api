@@ -1,5 +1,6 @@
 import { Request, Response } from 'express'
 import Task from '../../../models/Task'
+import { distinctArrayOfObjects } from '../../../utils/distinct'
 
 const getAll = async (req: Request, res: Response): Promise<void> => {
   const userId = req.params.userId
@@ -21,7 +22,7 @@ const getAll = async (req: Request, res: Response): Promise<void> => {
     .then(projects => {
       res
         .status(200)
-        .json(projects.map(e => e.project))
+        .json(distinctArrayOfObjects(projects.map(e => e.project), '_id'))
     })
     .catch(reason => {
       res
