@@ -44,7 +44,7 @@
     "helmet": "^3.21.3",
     "jsonwebtoken": "^8.5.1",
     "log4js": "^6.1.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "mongoose": "^5.9.2",
     "morgan": "^1.9.1",
     "passport": "^0.4.1",
